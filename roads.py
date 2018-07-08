@@ -15,18 +15,18 @@ fig, ax = ox.plot_graph(G_projected, show=False, save=True,
 """
 
 
-class Point
+class Point:
 	
 	def __init__(self, loc):
 		self.loc = loc
  	
- 	def set_nbr(left, right):
+	def set_nbr(self, left, right):
  		self.left = left
  		self.right = right
  		self.len = abs(left - right)
 
- 	def contrib(self, f):
- 		return lambda x, y: f(x-self.loc.re, y-self.loc.imag)
+	def contrib(self, f):
+ 		return lambda x, y: f(x-self.loc.real, y-self.loc.imag)
 
 
 def arange(path, n = 100):
@@ -39,9 +39,9 @@ def pieces(path, n = 100):
 		pt = Point(p)
 		if i == 0:
 			pt.set_nbr(p, (p+points[i+1])/2)
-		else i == last - 1:
+		elif i == last - 1:
 			pt.set_nbr((p+points[i-1])/2, p)
-		elif:
+		else:
 			pt.set_nbr((p+points[i-1])/2, (p+points[i+1])/2)
 		pts.append(pt)
 	return pts
@@ -49,15 +49,26 @@ def pieces(path, n = 100):
 def contrib(f, x, y, pts):
 	s = 0
 	for pt in pts:
-		s += pt.contrib(f)(x, y)
+		s += Point(pt).contrib(f)(x, y)
 	return s
 
 def left(pt, pts):
 	points = []
-	for p in points:
-		if p.re < pt.re:
+	for p in pts:
+		if p.real < pt.real:
 			points.append(p)
 	return points
+
+def ccontrib(x, y, z, f, paths):
+	points = []
+	for path in paths:
+		points += arange(path)
+	pts = left(complex(x, y), points)
+	print(pts)
+	return contrib(f, x, y, pts)
+
+
+
 
 
 def parametrize(path):
@@ -101,7 +112,7 @@ z = []
 for path in paths:
 	for segment in path: 
 		z.append(arange(segment))
-
+print(ccontrib(20, 200, 0, lambda x,y: C(x, y, 0), paths))
 
 
 
