@@ -19,6 +19,8 @@ class Point:
 	
 	def __init__(self, loc):
 		self.loc = loc
+		self.real = loc.real
+		self.imag = loc.imag
  	
 	def set_nbr(self, left, right):
  		self.left = left
@@ -49,7 +51,7 @@ def pieces(path, n = 100):
 def contrib(f, x, y, pts):
 	s = 0
 	for pt in pts:
-		s += Point(pt).contrib(f)(x, y)
+		s += pt.contrib(f)(x, y)*pt.len
 	return s
 
 def left(pt, pts):
@@ -62,13 +64,9 @@ def left(pt, pts):
 def ccontrib(x, y, z, f, paths):
 	points = []
 	for path in paths:
-		points += arange(path)
+		points += pieces(path)
 	pts = left(complex(x, y), points)
-	print(pts)
 	return contrib(f, x, y, pts)
-
-
-
 
 
 def parametrize(path):
@@ -112,30 +110,22 @@ z = []
 for path in paths:
 	for segment in path: 
 		z.append(arange(segment))
-print(ccontrib(20, 200, 0, lambda x,y: C(x, y, 0), paths))
 
-
-
-
-
-
-
-
-
-
+c = np.vectorize(lambda a, b: ccontrib(a, b, 0, lambda x,y: C(x, y, 0), paths))
+print(c(20, 40))
 """for segment in z:
 	plt.scatter([t.real for t in segment], [t.imag for t in segment], s = 0.01)
 plt.axes().set_aspect('equal', 'datalim')
 plt.show()
+"""
 
-
-x = np.arange(0.1, 5, 0.1)
-y = np.arange(-5, 5, 0.1)
+x = np.arange(-1, 1, 0.1)
+y = np.arange(-1, 1, 0.1)
 x, y  = np.meshgrid(x, y)
-z = c(x, y, 0, paths)
+z = c(x, y)
 plt.figure()
 cp = plt.contourf(x, y, z)
 plt.colorbar(cp)
 plt.contour(x, y, z)
 
-plt.show()"""
+plt.show()
