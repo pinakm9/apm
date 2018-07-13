@@ -6,13 +6,22 @@ import numpy as np
 #plt.show()
 from svgpathtools import svg2paths
 import scipy.integrate as integrate
-
+from utility import *
 """
 G = ox.graph_from_point((13.14633, 77.514386), distance= 2000, network_type='drive')
 G_projected = ox.project_graph(G)
 fig, ax = ox.plot_graph(G_projected, show=False, save=True, 
                            filename='icts2000', file_format='svg')
 """
+
+
+@timer
+def detect_street_network_from_point(lat = 13.14633, lon = 77.514386, distance = 2000, filename = 'icts2000'):
+	G = ox.graph_from_point((lat, lon), distance = distance, network_type = 'drive_service', simplify = False)
+	G_projected = ox.project_graph(G)
+	fig, ax = ox.plot_graph(G_projected, show = False, save = True, filename = filename, file_format='svg')
+	ox.save_graphml(G, filename = filename + '.graphml')
+	return G
 
 
 class Point:
@@ -69,32 +78,6 @@ def ccontrib(x, y, z, f, paths):
 	return contrib(f, x, y, pts)
 
 
-def parametrize(path):
-	if path.__class__.__name__ == 'Line':
-		s, e = path.start, path.end
-		f = lambda p, q, t: p + t*(q-p)
-		return lambda t: f(s.real, e.real, t), lambda t: f(s.imag, e.imag, t)
-	elif path.__class__.__name__ == 'CubicBezier':
-		s, c1, c2, e = path.start, path.control1, path.control2, path.end
-		f = lambda a, b, c, d, t: (1-t)**3*a + 3*(1-t)**2*t*b + 3*(1-t)*t**2*c + t**3*d
-		return lambda t: f(s.real, c1.real, c2.real, e.real, t),\
-			   lambda t: f(s.imag, c1.imag, c2.imag, e.imag, t)
-	else:
-		print('Error42: {}'.format(path.__class__.__name__))
-
-
-def segment_integrate(f, curve, a = 0, b = 1):
-	x, y = curve
-	return integrate.quad(lambda t: f(x(t), y(t)), a, b)[0]
-
-def path_integrate(f, paths):
-	s = 0
-	for path in paths:
-		for segment in path:
-			curve = parametrize(segment)
-			s += segment_integrate(f, curve)
-	return s
-
 def C(x, y, z, Q = 1, u = 5, K = 1.5, H = 0):
 	r = K*x/u
 	try:
@@ -105,27 +88,63 @@ def C(x, y, z, Q = 1, u = 5, K = 1.5, H = 0):
 	cy = np.exp(-y**2/(4*r))
 	return Q*cy*cz/(4*u*rr*np.sqrt(np.pi))
 
-paths, attributes = svg2paths('images/icts2000.svg')
+"""paths, attributes = svg2paths('images/icts2000.svg')
 z = []
 for path in paths:
 	for segment in path: 
-		z.append(arange(segment))
+		z += arange(segment)
+
+re = [p.real for p in z]
+im = [p.imag for p in z]
+#print(min(re), max(re), min(im), max(im))
 
 c = np.vectorize(lambda a, b: ccontrib(a, b, 0, lambda x,y: C(x, y, 0), paths))
-print(c(20, 40))
-"""for segment in z:
+for segment in z:
 	plt.scatter([t.real for t in segment], [t.imag for t in segment], s = 0.01)
 plt.axes().set_aspect('equal', 'datalim')
 plt.show()
+
+@timer
+def draw_contour(xl, xr, yl, yr, h = 0.1):
+	x = np.arange(xl, xr, h)
+	y = np.arange(yl, yr, h)
+	x, y  = np.meshgrid(x, y)
+	z = c(x, y)
+	plt.figure()
+	cp = plt.contourf(x, y, z)
+	plt.colorbar(cp)
+	plt.contour(x, y, z)
+	plt.savefig('images/Concentration contour.png')
+	plt.axes().set_aspect('equal', 'datalim')
+	plt.show()
+
+draw_contour(205,235,205,235,0.3)
+"""
+G = detect_street_network_from_point()
+for u in G.nodes:
+	print(G.node[u])
+
+#detect_street_network_from_point(distance = 2000, filename = 'icts2000')
 """
 
-x = np.arange(-1, 1, 0.1)
-y = np.arange(-1, 1, 0.1)
-x, y  = np.meshgrid(x, y)
-z = c(x, y)
-plt.figure()
-cp = plt.contourf(x, y, z)
-plt.colorbar(cp)
-plt.contour(x, y, z)
+class LineWay:
 
-plt.show()
+	def __init__(self, start, end):
+		self.start = start
+		self.end  =  end
+		self.length = np.norm(start - end)
+
+	def params():
+		pass 
+
+def detect_network_segments(network):
+	segments = []
+	for edge in network.edges:
+		start = np.array(network.node[edge[0]]['x'], network.node[edge[0]]['y'])
+		end = np.array(network.node[edge[1]]['x'], network.node[edge[1]]['y'])
+		lw = LineWay(start, end)
+		segments.append(lw)
+		print(lw, network[edge[0]][edge[1]]['length'])
+
+detect_network_segments(G)
+"""
