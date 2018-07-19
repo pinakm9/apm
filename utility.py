@@ -1,4 +1,5 @@
 from time import time
+import numpy as np
 
 def timer(func):
 	def new_func(*args,**kwargs):
@@ -24,6 +25,15 @@ def read_gq(file):
 			weights.append(w)
 			points.append(x)
 	return weights, points
+
+def C(x, y, z, Q = 1, u = 5, K = 10, H = 0):
+	if x <= 0:
+		return 0
+	else:
+		r = K*x/u
+		cz = np.exp(-(z - H)**2/(4*r)) + np.exp(-(z + H)**2/(4*r))
+		cy = np.exp(-y**2/(4*r))
+		return Q*cy*cz/(4*u*r*np.sqrt(np.pi))
 
 """
 def parametrize(path):

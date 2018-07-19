@@ -13,17 +13,6 @@ G_projected = ox.project_graph(G)
 fig, ax = ox.plot_graph(G_projected, show=False, save=True, 
                            filename='icts2000', file_format='svg')
 """
-
-
-@timer
-def detect_street_network_from_point(lat = 13.14633, lon = 77.514386, distance = 2000, filename = 'icts2000'):
-	G = ox.graph_from_point((lat, lon), distance = distance, network_type = 'drive_service', simplify = False)
-	G_projected = ox.project_graph(G)
-	fig, ax = ox.plot_graph(G_projected, show = False, save = True, filename = filename, file_format='svg')
-	ox.save_graphml(G, filename = filename + '.graphml')
-	return G
-
-
 class Point:
 	
 	def __init__(self, loc):
@@ -78,16 +67,6 @@ def ccontrib(x, y, z, f, paths):
 	return contrib(f, x, y, pts)
 
 
-def C(x, y, z, Q = 1, u = 5, K = 1.5, H = 0):
-	r = K*x/u
-	try:
-		rr = np.sqrt(r)
-	except:
-		print(r)
-	cz = np.exp(-(z - H)**2/(4*r)) + np.exp(-(z + H)**2/(4*r))
-	cy = np.exp(-y**2/(4*r))
-	return Q*cy*cz/(4*u*rr*np.sqrt(np.pi))
-
 """paths, attributes = svg2paths('images/icts2000.svg')
 z = []
 for path in paths:
@@ -120,31 +99,15 @@ def draw_contour(xl, xr, yl, yr, h = 0.1):
 
 draw_contour(205,235,205,235,0.3)
 """
-G = detect_street_network_from_point()
-for u in G.nodes:
-	print(G.node[u])
+G = ox.load_graphml('icts1500.graphml')
+for u in G.edges():
+	print(G[u[0]][u[1]])
 
-#detect_street_network_from_point(distance = 2000, filename = 'icts2000')
-"""
+@timer
+def detect_bld_network_from_point(lat = 13.14633, lon = 77.514386, distance = 2000, filename = 'icts2000'):
+	G = ox.buildings.buildings_from_point((lat, lon), distance = distance)
+	for n in G.geometry:
+		print(n)
+	return G
 
-class LineWay:
-
-	def __init__(self, start, end):
-		self.start = start
-		self.end  =  end
-		self.length = np.norm(start - end)
-
-	def params():
-		pass 
-
-def detect_network_segments(network):
-	segments = []
-	for edge in network.edges:
-		start = np.array(network.node[edge[0]]['x'], network.node[edge[0]]['y'])
-		end = np.array(network.node[edge[1]]['x'], network.node[edge[1]]['y'])
-		lw = LineWay(start, end)
-		segments.append(lw)
-		print(lw, network[edge[0]][edge[1]]['length'])
-
-detect_network_segments(G)
-"""
+detect_bld_network_from_point()
