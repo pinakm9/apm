@@ -3,7 +3,6 @@ import json
 import osmnx as ox
 import pwaqi as pw
 import pandas as pd
-import networkx as nx
 from utility import *
 
 @timer
@@ -65,40 +64,34 @@ def get_city_pollution_data(city, token = '09f4aebf96d26720c88d48f23293f18a6e912
 	return data
 
 @timer
-def detect_street_network_from_place(place, save = True, filename = 'icts2000'):
-	G = ox.graph_from_place(query = place, infrastructure = 'way["highway"]', network_type = 'drive', simplify = True)
+def detect_drive_network_from_place(place, save = True, filename = 'icts2000'):
+	G = ox.graph_from_place(query = place, network_type = 'drive', simplify = False)
+	hwy_types = ['primary', 'motorway', 'trunk']
+	gdf = ox.graph_to_gdfs(G, nodes=False)
+	mask = ~gdf['highway'].map(lambda x: isinstance(x, str) and x in hwy_types)
+	edges = zip(gdf[mask]['u'], gdf[mask]['v'], gdf[mask]['key'])
+	G.remove_edges_from(edges)
+	G = ox.remove_isolated_nodes(G)
 	G_projected = ox.project_graph(G)
-	highways_to_keep = ['motorway', 'trunk', 'primary']
-	H = nx.MultiDiGraph()
-	for u,v,attr in G.edges(data=True):
-	    if attr['highway'] in highways_to_keep:
-	        H.add_edge(u,v,attr_dict=attr)
-	        H.node[u].update(G.node[u])
-	        H.node[v].update(G.node[v])
-	H.graph = G.graph
-	H_projected = ox.project_graph(H)
-	fig, ax = ox.plot_graph(H_projected, show = False, save = save, filename = filename, file_format='svg')
-	ox.save_graphml(H, filename = filename + '.graphml')
-	return H
+	fig, ax = ox.plot_graph(G_projected, show = False, save = save, filename = filename, file_format='svg')
+	ox.save_graphml(G, filename = filename + '.graphml')
 	return G
 
 @timer
-def detect_street_network_from_point(lat = 13.14633, lon = 77.514386, distance = 2000, save = True, filename = 'icts2000'):
-	G = ox.graph_from_point((lat, lon), distance = distance, infrastructure = 'way["highway"]',\
-		network_type = 'drive', simplify = False)
-	highways_to_keep = ['motorway', 'trunk', 'primary']
-	H = nx.MultiDiGraph()
-	for u,v,attr in G.edges(data=True):
-	    if attr['highway'] in highways_to_keep:
-	        H.add_edge(u,v,attr_dict=attr)
-	        H.node[u].update(G.node[u])
-	        H.node[v].update(G.node[v])
-	H.graph = G.graph
-	H_projected = ox.project_graph(H)
-	fig, ax = ox.plot_graph(H_projected, show = False, save = save, filename = filename, file_format='svg')
-	ox.save_graphml(H, filename = filename + '.graphml')
-	return H
+def detect_drive_network_from_point(lat = 13.14633, lon = 77.514386, distance = 2000, save = True, filename = 'icts2000'):
+	G = ox.graph_from_point((lat, lon), distance = distance, network_type = 'drive', simplify = False)
+	hwy_types = ['primary', 'motorway', 'trunk']
+	gdf = ox.graph_to_gdfs(G, nodes=False)
+	mask = ~gdf['highway'].map(lambda x: isinstance(x, str) and x in hwy_types)
+	edges = zip(gdf[mask]['u'], gdf[mask]['v'], gdf[mask]['key'])
+	G.remove_edges_from(edges)
+	G = ox.remove_isolated_nodes(G)
+	G_projected = ox.project_graph(G)
+	filename += '-' + str(distance)
+	fig, ax = ox.plot_graph(G_projected, show = False, save = save, filename = filename, file_format='svg')
+	ox.save_graphml(G, filename = filename + '.graphml')
+	return G
 
 #print(get_city_pollution_data('Bangalore', folder = 'data/'))
-detect_street_network_from_point(13.0339, 77.51321111, filename = 'icts-2000')
-#detect_street_network_from_place('Bangalore, India', filename = 'Bangalore')
+#detect_drive_network_from_point(13.0339, 77.51321111, 4000, filename = 'peenya')
+detect_drive_network_from_place('Bangalore, India', filename = 'Bangalore')

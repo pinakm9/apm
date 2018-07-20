@@ -26,7 +26,13 @@ def read_gq(file):
 			points.append(x)
 	return weights, points
 
-def C(x, y, z, Q = 1, u = 5, K = 10, H = 0):
+def set_grid(point, size, step):
+	x, y = point
+	X = np.arange(x-size/2.0, x+size/2.0, step)
+	Y = np.arange(y-size/2.0, y+size/2.0, step)
+	return np.meshgrid(X, Y)
+
+def C(x, y, z, Q = 1, u = 5, K = 1, H = 0):
 	if x <= 0:
 		return 0
 	else:
@@ -34,6 +40,18 @@ def C(x, y, z, Q = 1, u = 5, K = 10, H = 0):
 		cz = np.exp(-(z - H)**2/(4*r)) + np.exp(-(z + H)**2/(4*r))
 		cy = np.exp(-y**2/(4*r))
 		return Q*cy*cz/(4*u*r*np.sqrt(np.pi))
+
+@timer
+def draw_contour(f, meshgrid, imgId):
+	x, y  = meshgrid
+	z = f(x, y)
+	plt.figure()
+	cp = plt.contourf(x, y, z)
+	plt.colorbar(cp)
+	plt.contour(x, y, z)
+	plt.savefig('images/Concentration contour{}.png'.format(imgId))
+	plt.axes().set_aspect('equal', 'datalim')
+	plt.show()
 
 """
 def parametrize(path):
@@ -49,16 +67,4 @@ def parametrize(path):
 	else:
 		print('Error42: {}'.format(path.__class__.__name__))
 
-
-def segment_integrate(f, curve, a = 0, b = 1):
-	x, y = curve
-	return integrate.quad(lambda t: f(x(t), y(t)), a, b)[0]
-
-def path_integrate(f, paths):
-	s = 0
-	for path in paths:
-		for segment in path:
-			curve = parametrize(segment)
-			s += segment_integrate(f, curve)
-	return s
 """

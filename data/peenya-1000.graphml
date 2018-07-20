@@ -1,0 +1,1801 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd"><key attr.name="oneway" attr.type="string" for="edge" id="d14"/>
+<key attr.name="length" attr.type="string" for="edge" id="d13"/>
+<key attr.name="maxspeed" attr.type="string" for="edge" id="d12"/>
+<key attr.name="access" attr.type="string" for="edge" id="d11"/>
+<key attr.name="osmid" attr.type="string" for="edge" id="d10"/>
+<key attr.name="highway" attr.type="string" for="edge" id="d9"/>
+<key attr.name="name" attr.type="string" for="edge" id="d8"/>
+<key attr.name="lanes" attr.type="string" for="edge" id="d7"/>
+<key attr.name="ref" attr.type="string" for="edge" id="d6"/>
+<key attr.name="osmid" attr.type="string" for="node" id="d5"/>
+<key attr.name="highway" attr.type="string" for="node" id="d4"/>
+<key attr.name="x" attr.type="string" for="node" id="d3"/>
+<key attr.name="y" attr.type="string" for="node" id="d2"/>
+<key attr.name="name" attr.type="string" for="graph" id="d1"/>
+<key attr.name="crs" attr.type="string" for="graph" id="d0"/>
+<graph edgedefault="directed"><data key="d0">{'init': 'epsg:4326'}</data>
+<data key="d1">unnamed</data>
+<node id="308072451">
+  <data key="d5">308072451</data>
+  <data key="d3">77.5183651</data>
+  <data key="d4">traffic_signals</data>
+  <data key="d2">13.0399215</data>
+</node>
+<node id="1794666966">
+  <data key="d3">77.5203344</data>
+  <data key="d2">13.0271641</data>
+  <data key="d5">1794666966</data>
+</node>
+<node id="419638282">
+  <data key="d5">419638282</data>
+  <data key="d3">77.5196997</data>
+  <data key="d4">traffic_signals</data>
+  <data key="d2">13.0285475</data>
+</node>
+<node id="3862315991">
+  <data key="d3">77.5161932</data>
+  <data key="d2">13.0418981</data>
+  <data key="d5">3862315991</data>
+</node>
+<node id="419638285">
+  <data key="d3">77.5202611</data>
+  <data key="d2">13.0271675</data>
+  <data key="d5">419638285</data>
+</node>
+<node id="419638287">
+  <data key="d3">77.5146489</data>
+  <data key="d2">13.0264772</data>
+  <data key="d5">419638287</data>
+</node>
+<node id="574520848">
+  <data key="d3">77.5045027</data>
+  <data key="d2">13.0384867</data>
+  <data key="d5">574520848</data>
+</node>
+<node id="426823697">
+  <data key="d3">77.5187249</data>
+  <data key="d2">13.0398702</data>
+  <data key="d5">426823697</data>
+</node>
+<node id="574520852">
+  <data key="d3">77.5041843</data>
+  <data key="d2">13.0352741</data>
+  <data key="d5">574520852</data>
+</node>
+<node id="426823702">
+  <data key="d5">426823702</data>
+  <data key="d3">77.5184141</data>
+  <data key="d4">traffic_signals</data>
+  <data key="d2">13.0400764</data>
+</node>
+<node id="2431140122">
+  <data key="d3">77.5181825</data>
+  <data key="d2">13.0324486</data>
+  <data key="d5">2431140122</data>
+</node>
+<node id="574520859">
+  <data key="d3">77.5043774</data>
+  <data key="d2">13.0349814</data>
+  <data key="d5">574520859</data>
+</node>
+<node id="308072410">
+  <data key="d5">308072410</data>
+  <data key="d3">77.5207425</data>
+  <data key="d4">traffic_signals</data>
+  <data key="d2">13.0258594</data>
+</node>
+<node id="3833983008">
+  <data key="d3">77.5183553</data>
+  <data key="d2">13.0398683</data>
+  <data key="d5">3833983008</data>
+</node>
+<node id="3833983009">
+  <data key="d3">77.5151728</data>
+  <data key="d2">13.0421227</data>
+  <data key="d5">3833983009</data>
+</node>
+<node id="3833983012">
+  <data key="d3">77.5155346</data>
+  <data key="d2">13.0419999</data>
+  <data key="d5">3833983012</data>
+</node>
+<node id="2431146027">
+  <data key="d5">2431146027</data>
+  <data key="d3">77.5048473</data>
+  <data key="d4">bus_stop</data>
+  <data key="d2">13.0410338</data>
+</node>
+<node id="3833983022">
+  <data key="d3">77.5181634</data>
+  <data key="d2">13.0400767</data>
+  <data key="d5">3833983022</data>
+</node>
+<node id="3833983028">
+  <data key="d3">77.5137834</data>
+  <data key="d2">13.0425826</data>
+  <data key="d5">3833983028</data>
+</node>
+<node id="1595758046">
+  <data key="d3">77.5048465</data>
+  <data key="d2">13.0418501</data>
+  <data key="d5">1595758046</data>
+</node>
+<node id="2431146294">
+  <data key="d5">2431146294</data>
+  <data key="d3">77.5045251</data>
+  <data key="d4">bus_stop</data>
+  <data key="d2">13.0384402</data>
+</node>
+<node id="3833983033">
+  <data key="d3">77.5165005</data>
+  <data key="d2">13.0415322</data>
+  <data key="d5">3833983033</data>
+</node>
+<node id="3833983036">
+  <data key="d3">77.5177072</data>
+  <data key="d2">13.0404713</data>
+  <data key="d5">3833983036</data>
+</node>
+<node id="3833983038">
+  <data key="d3">77.515846</data>
+  <data key="d2">13.0418797</data>
+  <data key="d5">3833983038</data>
+</node>
+<node id="2248439349">
+  <data key="d3">77.5182358</data>
+  <data key="d2">13.038503</data>
+  <data key="d5">2248439349</data>
+</node>
+<node id="2247896640">
+  <data key="d3">77.504613</data>
+  <data key="d2">13.0391534</data>
+  <data key="d5">2247896640</data>
+</node>
+<node id="3833983044">
+  <data key="d3">77.5163342</data>
+  <data key="d2">13.0416393</data>
+  <data key="d5">3833983044</data>
+</node>
+<node id="308072773">
+  <data key="d3">77.518479</data>
+  <data key="d2">13.0401417</data>
+  <data key="d5">308072773</data>
+</node>
+<node id="308072774">
+  <data key="d3">77.5193769</data>
+  <data key="d2">13.0415435</data>
+  <data key="d5">308072774</data>
+</node>
+<node id="2247896647">
+  <data key="d3">77.5047375</data>
+  <data key="d2">13.0402015</data>
+  <data key="d5">2247896647</data>
+</node>
+<node id="308072776">
+  <data key="d3">77.5201322</data>
+  <data key="d2">13.0427977</data>
+  <data key="d5">308072776</data>
+</node>
+<node id="599212617">
+  <data key="d3">77.5043488</data>
+  <data key="d2">13.0366631</data>
+  <data key="d5">599212617</data>
+</node>
+<node id="2247896650">
+  <data key="d3">77.5047851</data>
+  <data key="d2">13.0405875</data>
+  <data key="d5">2247896650</data>
+</node>
+<node id="571438263">
+  <data key="d3">77.5167273</data>
+  <data key="d2">13.0415588</data>
+  <data key="d5">571438263</data>
+</node>
+<node id="599212620">
+  <data key="d3">77.5042936</data>
+  <data key="d2">13.0361968</data>
+  <data key="d5">599212620</data>
+</node>
+<node id="3833983054">
+  <data key="d3">77.5166802</data>
+  <data key="d2">13.0413989</data>
+  <data key="d5">3833983054</data>
+</node>
+<node id="3833983055">
+  <data key="d3">77.5169082</data>
+  <data key="d2">13.0412081</data>
+  <data key="d5">3833983055</data>
+</node>
+<node id="3419979747">
+  <data key="d3">77.5184115</data>
+  <data key="d2">13.0398906</data>
+  <data key="d5">3419979747</data>
+</node>
+<node id="1595757909">
+  <data key="d3">77.5047245</data>
+  <data key="d2">13.0400828</data>
+  <data key="d5">1595757909</data>
+</node>
+<node id="2247896665">
+  <data key="d3">77.5048785</data>
+  <data key="d2">13.0422022</data>
+  <data key="d5">2247896665</data>
+</node>
+<node id="2431140188">
+  <data key="d5">2431140188</data>
+  <data key="d3">77.5181445</data>
+  <data key="d4">bus_stop</data>
+  <data key="d2">13.0354477</data>
+</node>
+<node id="2431140189">
+  <data key="d5">2431140189</data>
+  <data key="d3">77.5179881</data>
+  <data key="d4">bus_stop</data>
+  <data key="d2">13.0349328</data>
+</node>
+<node id="3520978676">
+  <data key="d3">77.5191729</data>
+  <data key="d2">13.0299622</data>
+  <data key="d5">3520978676</data>
+</node>
+<node id="3419979745">
+  <data key="d3">77.5197087</data>
+  <data key="d2">13.0286962</data>
+  <data key="d5">3419979745</data>
+</node>
+<node id="3833695332">
+  <data key="d3">77.5187665</data>
+  <data key="d2">13.0396591</data>
+  <data key="d5">3833695332</data>
+</node>
+<node id="599212397">
+  <data key="d3">77.5174188</data>
+  <data key="d2">13.0276299</data>
+  <data key="d5">599212397</data>
+</node>
+<node id="2247896644">
+  <data key="d3">77.5047058</data>
+  <data key="d2">13.0399394</data>
+  <data key="d5">2247896644</data>
+</node>
+<node id="308072424">
+  <data key="d3">77.5180551</data>
+  <data key="d2">13.0325879</data>
+  <data key="d5">308072424</data>
+</node>
+<node id="1054665150">
+  <data key="d3">77.5164712</data>
+  <data key="d2">13.0417414</data>
+  <data key="d5">1054665150</data>
+</node>
+<node id="3520978675">
+  <data key="d3">77.5191324</data>
+  <data key="d2">13.0300639</data>
+  <data key="d5">3520978675</data>
+</node>
+<node id="483412094">
+  <data key="d5">483412094</data>
+  <data key="d3">77.5111135</data>
+  <data key="d4">traffic_signals</data>
+  <data key="d2">13.0250957</data>
+</node>
+<node id="3856885376">
+  <data key="d3">77.518446</data>
+  <data key="d2">13.0401297</data>
+  <data key="d5">3856885376</data>
+</node>
+<node id="2431142785">
+  <data key="d5">2431142785</data>
+  <data key="d3">77.5129967</data>
+  <data key="d4">bus_stop</data>
+  <data key="d2">13.0428501</data>
+</node>
+<node id="3856885380">
+  <data key="d3">77.5184802</data>
+  <data key="d2">13.040103</data>
+  <data key="d5">3856885380</data>
+</node>
+<node id="1595758102">
+  <data key="d3">77.5049286</data>
+  <data key="d2">13.0427997</data>
+  <data key="d5">1595758102</data>
+</node>
+<node id="599212693">
+  <data key="d3">77.5048202</data>
+  <data key="d2">13.0408543</data>
+  <data key="d5">599212693</data>
+</node>
+<node id="599212695">
+  <data key="d3">77.5048725</data>
+  <data key="d2">13.0415721</data>
+  <data key="d5">599212695</data>
+</node>
+<node id="2248546372">
+  <data key="d3">77.5044942</data>
+  <data key="d2">13.0381286</data>
+  <data key="d5">2248546372</data>
+</node>
+<node id="599212698">
+  <data key="d3">77.5048971</data>
+  <data key="d2">13.0412842</data>
+  <data key="d5">599212698</data>
+</node>
+<node id="245617178">
+  <data key="d3">77.5185725</data>
+  <data key="d2">13.0397759</data>
+  <data key="d5">245617178</data>
+</node>
+<node id="308072432">
+  <data key="d3">77.5177805</data>
+  <data key="d2">13.034068</data>
+  <data key="d5">308072432</data>
+</node>
+<node id="3833983046">
+  <data key="d3">77.5180052</data>
+  <data key="d2">13.04021</data>
+  <data key="d5">3833983046</data>
+</node>
+<node id="599212532">
+  <data key="d3">77.5041198</data>
+  <data key="d2">13.0336701</data>
+  <data key="d5">599212532</data>
+</node>
+<node id="2248546480">
+  <data key="d3">77.5047997</data>
+  <data key="d2">13.0407281</data>
+  <data key="d5">2248546480</data>
+</node>
+<node id="1054665137">
+  <data key="d3">77.515572</data>
+  <data key="d2">13.0421747</data>
+  <data key="d5">1054665137</data>
+</node>
+<node id="3833763827">
+  <data key="d3">77.5214813</data>
+  <data key="d2">13.0381658</data>
+  <data key="d5">3833763827</data>
+</node>
+<node id="2431141046">
+  <data key="d5">2431141046</data>
+  <data key="d3">77.5183456</data>
+  <data key="d4">bus_stop</data>
+  <data key="d2">13.0398157</data>
+</node>
+<node id="701736119">
+  <data key="d5">701736119</data>
+  <data key="d3">77.51846</data>
+  <data key="d4">traffic_signals</data>
+  <data key="d2">13.0400428</data>
+</node>
+<node id="571438265">
+  <data key="d3">77.5147003</data>
+  <data key="d2">13.042475</data>
+  <data key="d5">571438265</data>
+</node>
+<node id="2248546492">
+  <data key="d3">77.5048935</data>
+  <data key="d2">13.0413606</data>
+  <data key="d5">2248546492</data>
+</node>
+<node id="2248546494">
+  <data key="d3">77.5048667</data>
+  <data key="d2">13.0417249</data>
+  <data key="d5">2248546494</data>
+</node>
+<node id="2431146694">
+  <data key="d5">2431146694</data>
+  <data key="d3">77.5041332</data>
+  <data key="d4">bus_stop</data>
+  <data key="d2">13.0337696</data>
+</node>
+<node id="1794666951">
+  <data key="d3">77.5181752</data>
+  <data key="d2">13.032467</data>
+  <data key="d5">1794666951</data>
+</node>
+<node id="1794666954">
+  <data key="d3">77.5197712</data>
+  <data key="d2">13.0285486</data>
+  <data key="d5">1794666954</data>
+</node>
+<node id="1794666955">
+  <data key="d3">77.5191828</data>
+  <data key="d2">13.0299373</data>
+  <data key="d5">1794666955</data>
+</node>
+<node id="1794666956">
+  <data key="d3">77.5183063</data>
+  <data key="d2">13.0389569</data>
+  <data key="d5">1794666956</data>
+</node>
+<node id="1794666958">
+  <data key="d3">77.5183432</data>
+  <data key="d2">13.0363415</data>
+  <data key="d5">1794666958</data>
+</node>
+<node id="4843481807">
+  <data key="d3">77.5222992</data>
+  <data key="d2">13.0377186</data>
+  <data key="d5">4843481807</data>
+</node>
+<node id="2248439248">
+  <data key="d3">77.518123</data>
+  <data key="d2">13.0356217</data>
+  <data key="d5">2248439248</data>
+</node>
+<node id="1794666963">
+  <data key="d3">77.5182735</data>
+  <data key="d2">13.0385405</data>
+  <data key="d5">1794666963</data>
+</node>
+<node id="2248439252">
+  <data key="d3">77.5182249</data>
+  <data key="d2">13.0359678</data>
+  <data key="d5">2248439252</data>
+</node>
+<node id="3862315982">
+  <data key="d3">77.5159064</data>
+  <data key="d2">13.0420428</data>
+  <data key="d5">3862315982</data>
+</node>
+<node id="3862315990">
+  <data key="d3">77.5181087</data>
+  <data key="d2">13.0403175</data>
+  <data key="d5">3862315990</data>
+</node>
+<node id="1794666967">
+  <data key="d3">77.5179341</data>
+  <data key="d2">13.0330538</data>
+  <data key="d5">1794666967</data>
+</node>
+<node id="1794666968">
+  <data key="d3">77.5181272</data>
+  <data key="d2">13.0325876</data>
+  <data key="d5">1794666968</data>
+</node>
+<node id="4843481817">
+  <data key="d3">77.5222044</data>
+  <data key="d2">13.0377704</data>
+  <data key="d5">4843481817</data>
+</node>
+<node id="4843481818">
+  <data key="d3">77.5222885</data>
+  <data key="d2">13.0379095</data>
+  <data key="d5">4843481818</data>
+</node>
+<node id="1794666977">
+  <data key="d3">77.5180421</data>
+  <data key="d2">13.034969</data>
+  <data key="d5">1794666977</data>
+</node>
+<node id="308072413">
+  <data key="d3">77.5201065</data>
+  <data key="d2">13.0275874</data>
+  <data key="d5">308072413</data>
+</node>
+<node id="1794666974">
+  <data key="d3">77.5178685</data>
+  <data key="d2">13.0334696</data>
+  <data key="d5">1794666974</data>
+</node>
+<node id="1794666976">
+  <data key="d3">77.5183013</data>
+  <data key="d2">13.0360776</data>
+  <data key="d5">1794666976</data>
+</node>
+<node id="4843481808">
+  <data key="d3">77.5223884</data>
+  <data key="d2">13.0378545</data>
+  <data key="d5">4843481808</data>
+</node>
+<node id="3419979746">
+  <data key="d3">77.5183973</data>
+  <data key="d2">13.0398415</data>
+  <data key="d5">3419979746</data>
+</node>
+<node id="1794666979">
+  <data key="d3">77.5183427</data>
+  <data key="d2">13.0364458</data>
+  <data key="d5">1794666979</data>
+</node>
+<node id="308072421">
+  <data key="d3">77.5190777</data>
+  <data key="d2">13.0299826</data>
+  <data key="d5">308072421</data>
+</node>
+<node id="1794666983">
+  <data key="d3">77.5208012</data>
+  <data key="d2">13.0258816</data>
+  <data key="d5">1794666983</data>
+</node>
+<node id="1794666984">
+  <data key="d3">77.5201789</data>
+  <data key="d2">13.0275863</data>
+  <data key="d5">1794666984</data>
+</node>
+<node id="308072427">
+  <data key="d3">77.5178577</data>
+  <data key="d2">13.0330646</data>
+  <data key="d5">308072427</data>
+</node>
+<node id="308072430">
+  <data key="d3">77.5177891</data>
+  <data key="d2">13.0334994</data>
+  <data key="d5">308072430</data>
+</node>
+<node id="308072443">
+  <data key="d3">77.5182354</data>
+  <data key="d2">13.038642</data>
+  <data key="d5">308072443</data>
+</node>
+<node id="2248546544">
+  <data key="d3">77.5049336</data>
+  <data key="d2">13.0428597</data>
+  <data key="d5">2248546544</data>
+</node>
+<node id="3520978674">
+  <data key="d3">77.5190438</data>
+  <data key="d2">13.0300698</data>
+  <data key="d5">3520978674</data>
+</node>
+<node id="419638259">
+  <data key="d3">77.5182657</data>
+  <data key="d2">13.0363572</data>
+  <data key="d5">419638259</data>
+</node>
+<node id="1794666960">
+  <data key="d3">77.5178683</data>
+  <data key="d2">13.0341325</data>
+  <data key="d5">1794666960</data>
+</node>
+<node id="2248439294">
+  <data key="d3">77.5182725</data>
+  <data key="d2">13.037182</data>
+  <data key="d5">2248439294</data>
+</node>
+<node id="308072438">
+  <data key="d3">77.5182605</data>
+  <data key="d2">13.0361322</data>
+  <data key="d5">308072438</data>
+</node>
+<node id="3833983048">
+  <data key="d3">77.5161059</data>
+  <data key="d2">13.0417647</data>
+  <data key="d5">3833983048</data>
+</node>
+<node id="308072441">
+  <data key="d3">77.5182696</data>
+  <data key="d2">13.0364673</data>
+  <data key="d5">308072441</data>
+</node>
+<node id="2248439290">
+  <data key="d3">77.5183214</data>
+  <data key="d2">13.0371729</data>
+  <data key="d5">2248439290</data>
+</node>
+<node id="2248439358">
+  <data key="d3">77.5182551</data>
+  <data key="d2">13.0387995</data>
+  <data key="d5">2248439358</data>
+</node>
+<node id="308072445">
+  <data key="d3">77.5183126</data>
+  <data key="d2">13.0393694</data>
+  <data key="d5">308072445</data>
+</node>
+<node id="419638270">
+  <data key="d3">77.5181113</data>
+  <data key="d2">13.032468</data>
+  <data key="d5">419638270</data>
+</node>
+<node id="308072435">
+  <data key="d3">77.5180294</data>
+  <data key="d2">13.0351049</data>
+  <data key="d5">308072435</data>
+</node>
+<edge id="0" source="308072451" target="426823702">
+  <data key="d7">2</data>
+  <data key="d9">secondary</data>
+  <data key="d12">40</data>
+  <data key="d11">yes</data>
+  <data key="d10">28056441</data>
+  <data key="d13">18.023</data>
+  <data key="d14">True</data>
+</edge>
+<edge id="0" source="308072451" target="3833983022">
+  <data key="d7">2</data>
+  <data key="d8">Tumkur Road</data>
+  <data key="d10">383028789</data>
+  <data key="d14">True</data>
+  <data key="d6">NH48</data>
+  <data key="d9">trunk</data>
+  <data key="d12">60</data>
+  <data key="d13">27.843</data>
+</edge>
+<edge id="0" source="1794666966" target="1794666983">
+  <data key="d7">2</data>
+  <data key="d9">secondary</data>
+  <data key="d12">40</data>
+  <data key="d11">yes</data>
+  <data key="d10">464288498</data>
+  <data key="d13">151.309</data>
+  <data key="d14">True</data>
+</edge>
+<edge id="0" source="419638282" target="3419979745">
+  <data key="d14">False</data>
+  <data key="d13">16.563</data>
+  <data key="d9">secondary</data>
+  <data key="d10">431181123</data>
+</edge>
+<edge id="0" source="419638282" target="308072421">
+  <data key="d7">2</data>
+  <data key="d9">secondary</data>
+  <data key="d12">40</data>
+  <data key="d11">yes</data>
+  <data key="d10">28056441</data>
+  <data key="d13">173.219</data>
+  <data key="d14">True</data>
+</edge>
+<edge id="0" source="419638282" target="599212397">
+  <data key="d8">High Tension Road</data>
+  <data key="d13">267.334</data>
+  <data key="d14">False</data>
+  <data key="d9">secondary</data>
+  <data key="d10">45250014</data>
+</edge>
+<edge id="0" source="3862315991" target="1054665150">
+  <data key="d7">2</data>
+  <data key="d8">Tumkur Road</data>
+  <data key="d10">383028788</data>
+  <data key="d14">True</data>
+  <data key="d6">NH48;75</data>
+  <data key="d9">trunk</data>
+  <data key="d12">60</data>
+  <data key="d13">34.792</data>
+</edge>
+<edge id="0" source="419638285" target="308072413">
+  <data key="d7">2</data>
+  <data key="d9">secondary</data>
+  <data key="d12">40</data>
+  <data key="d11">yes</data>
+  <data key="d10">28056441</data>
+  <data key="d13">49.604</data>
+  <data key="d14">True</data>
+</edge>
+<edge id="0" source="419638287" target="599212397">
+  <data key="d8">High Tension Road</data>
+  <data key="d13">326.301</data>
+  <data key="d14">False</data>
+  <data key="d9">secondary</data>
+  <data key="d10">45250014</data>
+</edge>
+<edge id="0" source="419638287" target="483412094">
+  <data key="d8">High Tension Road</data>
+  <data key="d13">412.662</data>
+  <data key="d14">False</data>
+  <data key="d9">secondary</data>
+  <data key="d10">45250014</data>
+</edge>
+<edge id="0" source="574520848" target="2247896640">
+  <data key="d8">Andrahalli Main Road</data>
+  <data key="d13">75.091</data>
+  <data key="d14">False</data>
+  <data key="d9">secondary</data>
+  <data key="d10">45249856</data>
+</edge>
+<edge id="0" source="574520848" target="2431146294">
+  <data key="d8">Andrahalli Main Road</data>
+  <data key="d13">5.712</data>
+  <data key="d14">False</data>
+  <data key="d9">secondary</data>
+  <data key="d10">45249856</data>
+</edge>
+<edge id="0" source="426823697" target="4843481818">
+  <data key="d7">2</data>
+  <data key="d8">Tumkur Road</data>
+  <data key="d10">383028788</data>
+  <data key="d14">True</data>
+  <data key="d6">NH48;75</data>
+  <data key="d9">trunk</data>
+  <data key="d12">60</data>
+  <data key="d13">443.349</data>
+</edge>
+<edge id="0" source="574520852" target="574520859">
+  <data key="d8">Andrahalli Main Road</data>
+  <data key="d13">38.689</data>
+  <data key="d14">False</data>
+  <data key="d9">secondary</data>
+  <data key="d10">45249856</data>
+</edge>
+<edge id="0" source="574520852" target="599212620">
+  <data key="d8">Andrahalli Main Road</data>
+  <data key="d13">103.281</data>
+  <data key="d14">False</data>
+  <data key="d9">secondary</data>
+  <data key="d10">45249856</data>
+</edge>
+<edge id="0" source="426823702" target="3856885376">
+  <data key="d7">2</data>
+  <data key="d9">secondary</data>
+  <data key="d12">40</data>
+  <data key="d11">yes</data>
+  <data key="d10">28056441</data>
+  <data key="d13">6.861</data>
+  <data key="d14">True</data>
+</edge>
+<edge id="0" source="426823702" target="701736119">
+  <data key="d7">2</data>
+  <data key="d8">Tumkur Road</data>
+  <data key="d10">383028788</data>
+  <data key="d14">True</data>
+  <data key="d6">NH48;75</data>
+  <data key="d9">trunk</data>
+  <data key="d12">60</data>
+  <data key="d13">6.219</data>
+</edge>
+<edge id="0" source="2431140122" target="3520978675">
+  <data key="d7">2</data>
+  <data key="d9">secondary</data>
+  <data key="d12">40</data>
+  <data key="d11">yes</data>
+  <data key="d10">168173381</data>
+  <data key="d13">284.434</data>
+  <data key="d14">True</data>
+</edge>
+<edge id="0" source="574520859" target="574520852">
+  <data key="d8">Andrahalli Main Road</data>
+  <data key="d13">38.689</data>
+  <data key="d14">False</data>
+  <data key="d9">secondary</data>
+  <data key="d10">45249856</data>
+</edge>
+<edge id="0" source="574520859" target="2431146694">
+  <data key="d8">Andrahalli Main Road</data>
+  <data key="d13">137.318</data>
+  <data key="d14">False</data>
+  <data key="d9">secondary</data>
+  <data key="d10">45249856</data>
+</edge>
+<edge id="0" source="308072410" target="419638285">
+  <data key="d7">2</data>
+  <data key="d9">secondary</data>
+  <data key="d12">40</data>
+  <data key="d11">yes</data>
+  <data key="d10">28056441</data>
+  <data key="d13">154.521</data>
+  <data key="d14">True</data>
+</edge>
+<edge id="0" source="3833983008" target="308072451">
+  <data key="d7">2</data>
+  <data key="d9">secondary</data>
+  <data key="d12">40</data>
+  <data key="d11">yes</data>
+  <data key="d10">28056441</data>
+  <data key="d13">6.01</data>
+  <data key="d14">True</data>
+</edge>
+<edge id="0" source="3833983009" target="3833983028">
+  <data key="d7">2</data>
+  <data key="d8">Tumkur Road</data>
+  <data key="d10">383028789</data>
+  <data key="d14">True</data>
+  <data key="d6">NH48</data>
+  <data key="d9">trunk</data>
+  <data key="d12">60</data>
+  <data key="d13">158.96</data>
+</edge>
+<edge id="0" source="3833983012" target="3833983009">
+  <data key="d7">2</data>
+  <data key="d8">Tumkur Road</data>
+  <data key="d10">383028789</data>
+  <data key="d14">True</data>
+  <data key="d6">NH48</data>
+  <data key="d9">trunk</data>
+  <data key="d12">60</data>
+  <data key="d13">41.503</data>
+</edge>
+<edge id="0" source="2431146027" target="599212698">
+  <data key="d8">Andrahalli Main Road</data>
+  <data key="d13">28.361</data>
+  <data key="d14">False</data>
+  <data key="d9">secondary</data>
+  <data key="d10">45249856</data>
+</edge>
+<edge id="0" source="2431146027" target="599212693">
+  <data key="d8">Andrahalli Main Road</data>
+  <data key="d13">20.174</data>
+  <data key="d14">False</data>
+  <data key="d9">secondary</data>
+  <data key="d10">45249856</data>
+</edge>
+<edge id="0" source="3833983022" target="3833983046">
+  <data key="d7">2</data>
+  <data key="d8">Tumkur Road</data>
+  <data key="d10">383028789</data>
+  <data key="d14">True</data>
+  <data key="d6">NH48</data>
+  <data key="d9">trunk</data>
+  <data key="d12">60</data>
+  <data key="d13">22.658</data>
+</edge>
+<edge id="0" source="3833983028" target="2431142785">
+  <data key="d7">2</data>
+  <data key="d8">Tumkur Road</data>
+  <data key="d10">383028789</data>
+  <data key="d14">True</data>
+  <data key="d6">NH48</data>
+  <data key="d9">trunk</data>
+  <data key="d12">60</data>
+  <data key="d13">90.262</data>
+</edge>
+<edge id="0" source="1595758046" target="2247896665">
+  <data key="d8">Andrahalli Main Road</data>
+  <data key="d13">39.305</data>
+  <data key="d14">False</data>
+  <data key="d9">secondary</data>
+  <data key="d10">45249856</data>
+</edge>
+<edge id="0" source="1595758046" target="2248546494">
+  <data key="d8">Andrahalli Main Road</data>
+  <data key="d13">14.093</data>
+  <data key="d14">False</data>
+  <data key="d9">secondary</data>
+  <data key="d10">45249856</data>
+</edge>
+<edge id="0" source="2431146294" target="574520848">
+  <data key="d8">Andrahalli Main Road</data>
+  <data key="d13">5.712</data>
+  <data key="d14">False</data>
+  <data key="d9">secondary</data>
+  <data key="d10">45249856</data>
+</edge>
+<edge id="0" source="2431146294" target="2248546372">
+  <data key="d8">Andrahalli Main Road</data>
+  <data key="d13">34.81</data>
+  <data key="d14">False</data>
+  <data key="d9">secondary</data>
+  <data key="d10">45249856</data>
+</edge>
+<edge id="0" source="3833983033" target="3833983044">
+  <data key="d7">2</data>
+  <data key="d8">Tumkur Road</data>
+  <data key="d10">383028789</data>
+  <data key="d14">True</data>
+  <data key="d6">NH48</data>
+  <data key="d9">trunk</data>
+  <data key="d12">60</data>
+  <data key="d13">21.595</data>
+</edge>
+<edge id="0" source="3833983036" target="3833983055">
+  <data key="d7">2</data>
+  <data key="d8">Tumkur Road</data>
+  <data key="d10">383028789</data>
+  <data key="d14">True</data>
+  <data key="d6">NH48</data>
+  <data key="d9">trunk</data>
+  <data key="d12">60</data>
+  <data key="d13">119.18</data>
+</edge>
+<edge id="0" source="3833983038" target="3833983012">
+  <data key="d7">2</data>
+  <data key="d8">Tumkur Road</data>
+  <data key="d10">383028789</data>
+  <data key="d14">True</data>
+  <data key="d6">NH48</data>
+  <data key="d9">trunk</data>
+  <data key="d12">60</data>
+  <data key="d13">36.284</data>
+</edge>
+<edge id="0" source="2248439349" target="308072443">
+  <data key="d7">2</data>
+  <data key="d9">secondary</data>
+  <data key="d12">40</data>
+  <data key="d11">yes</data>
+  <data key="d10">28056441</data>
+  <data key="d13">15.456</data>
+  <data key="d14">True</data>
+</edge>
+<edge id="0" source="2247896640" target="574520848">
+  <data key="d8">Andrahalli Main Road</data>
+  <data key="d13">75.091</data>
+  <data key="d14">False</data>
+  <data key="d9">secondary</data>
+  <data key="d10">45249856</data>
+</edge>
+<edge id="0" source="2247896640" target="2247896644">
+  <data key="d8">Andrahalli Main Road</data>
+  <data key="d13">87.976</data>
+  <data key="d14">False</data>
+  <data key="d9">secondary</data>
+  <data key="d10">45249856</data>
+</edge>
+<edge id="0" source="3833983044" target="3833983048">
+  <data key="d7">2</data>
+  <data key="d8">Tumkur Road</data>
+  <data key="d10">383028789</data>
+  <data key="d14">True</data>
+  <data key="d6">NH48</data>
+  <data key="d9">trunk</data>
+  <data key="d12">60</data>
+  <data key="d13">28.391</data>
+</edge>
+<edge id="0" source="308072773" target="3856885380">
+  <data key="d7">2</data>
+  <data key="d9">secondary</data>
+  <data key="d12">40</data>
+  <data key="d11">yes</data>
+  <data key="d10">168173381</data>
+  <data key="d13">4.305</data>
+  <data key="d14">True</data>
+</edge>
+<edge id="0" source="308072773" target="308072774">
+  <data key="d9">secondary</data>
+  <data key="d10">168170924</data>
+  <data key="d13">183.732</data>
+  <data key="d8">Jalahalli Road</data>
+  <data key="d14">False</data>
+</edge>
+<edge id="0" source="308072774" target="308072776">
+  <data key="d9">secondary</data>
+  <data key="d10">168170924</data>
+  <data key="d13">161.69</data>
+  <data key="d8">Jalahalli Road</data>
+  <data key="d14">False</data>
+</edge>
+<edge id="0" source="308072774" target="308072773">
+  <data key="d9">secondary</data>
+  <data key="d10">168170924</data>
+  <data key="d13">183.732</data>
+  <data key="d8">Jalahalli Road</data>
+  <data key="d14">False</data>
+</edge>
+<edge id="0" source="2247896647" target="2247896650">
+  <data key="d8">Andrahalli Main Road</data>
+  <data key="d13">43.23</data>
+  <data key="d14">False</data>
+  <data key="d9">secondary</data>
+  <data key="d10">45249856</data>
+</edge>
+<edge id="0" source="2247896647" target="1595757909">
+  <data key="d8">Andrahalli Main Road</data>
+  <data key="d13">13.274</data>
+  <data key="d14">False</data>
+  <data key="d9">secondary</data>
+  <data key="d10">45249856</data>
+</edge>
+<edge id="0" source="308072776" target="308072774">
+  <data key="d9">secondary</data>
+  <data key="d10">168170924</data>
+  <data key="d13">161.69</data>
+  <data key="d8">Jalahalli Road</data>
+  <data key="d14">False</data>
+</edge>
+<edge id="0" source="599212617" target="2248546372">
+  <data key="d8">Andrahalli Main Road</data>
+  <data key="d13">163.716</data>
+  <data key="d14">False</data>
+  <data key="d9">secondary</data>
+  <data key="d10">45249856</data>
+</edge>
+<edge id="0" source="599212617" target="599212620">
+  <data key="d8">Andrahalli Main Road</data>
+  <data key="d13">52.194</data>
+  <data key="d14">False</data>
+  <data key="d9">secondary</data>
+  <data key="d10">45249856</data>
+</edge>
+<edge id="0" source="2247896650" target="2248546480">
+  <data key="d8">Andrahalli Main Road</data>
+  <data key="d13">15.714</data>
+  <data key="d14">False</data>
+  <data key="d9">secondary</data>
+  <data key="d10">45249856</data>
+</edge>
+<edge id="0" source="2247896650" target="2247896647">
+  <data key="d8">Andrahalli Main Road</data>
+  <data key="d13">43.23</data>
+  <data key="d14">False</data>
+  <data key="d9">secondary</data>
+  <data key="d10">45249856</data>
+</edge>
+<edge id="0" source="571438263" target="3862315990">
+  <data key="d7">2</data>
+  <data key="d8">Tumkur Road</data>
+  <data key="d10">383028788</data>
+  <data key="d14">True</data>
+  <data key="d6">NH48;75</data>
+  <data key="d9">trunk</data>
+  <data key="d12">60</data>
+  <data key="d13">203.579</data>
+</edge>
+<edge id="0" source="599212620" target="599212617">
+  <data key="d8">Andrahalli Main Road</data>
+  <data key="d13">52.194</data>
+  <data key="d14">False</data>
+  <data key="d9">secondary</data>
+  <data key="d10">45249856</data>
+</edge>
+<edge id="0" source="599212620" target="574520852">
+  <data key="d8">Andrahalli Main Road</data>
+  <data key="d13">103.281</data>
+  <data key="d14">False</data>
+  <data key="d9">secondary</data>
+  <data key="d10">45249856</data>
+</edge>
+<edge id="0" source="3833983054" target="3833983033">
+  <data key="d7">2</data>
+  <data key="d8">Tumkur Road</data>
+  <data key="d10">383028789</data>
+  <data key="d14">True</data>
+  <data key="d6">NH48</data>
+  <data key="d9">trunk</data>
+  <data key="d12">60</data>
+  <data key="d13">24.467</data>
+</edge>
+<edge id="0" source="3833983055" target="3833983054">
+  <data key="d7">2</data>
+  <data key="d8">Tumkur Road</data>
+  <data key="d10">383028789</data>
+  <data key="d14">True</data>
+  <data key="d6">NH48</data>
+  <data key="d9">trunk</data>
+  <data key="d12">60</data>
+  <data key="d13">32.56</data>
+</edge>
+<edge id="0" source="3419979747" target="3419979746">
+  <data key="d7">2</data>
+  <data key="d9">secondary</data>
+  <data key="d12">40</data>
+  <data key="d11">yes</data>
+  <data key="d10">168173381</data>
+  <data key="d13">5.672</data>
+  <data key="d14">True</data>
+</edge>
+<edge id="0" source="3419979747" target="308072451">
+  <data key="d7">2</data>
+  <data key="d8">Tumkur Road</data>
+  <data key="d10">383028789</data>
+  <data key="d14">True</data>
+  <data key="d6">NH48</data>
+  <data key="d9">trunk</data>
+  <data key="d12">60</data>
+  <data key="d13">6.089</data>
+</edge>
+<edge id="0" source="1595757909" target="2247896644">
+  <data key="d8">Andrahalli Main Road</data>
+  <data key="d13">16.074</data>
+  <data key="d14">False</data>
+  <data key="d9">secondary</data>
+  <data key="d10">45249856</data>
+</edge>
+<edge id="0" source="1595757909" target="2247896647">
+  <data key="d8">Andrahalli Main Road</data>
+  <data key="d13">13.274</data>
+  <data key="d14">False</data>
+  <data key="d9">secondary</data>
+  <data key="d10">45249856</data>
+</edge>
+<edge id="0" source="2247896665" target="1595758102">
+  <data key="d8">Andrahalli Main Road</data>
+  <data key="d13">66.66</data>
+  <data key="d14">False</data>
+  <data key="d9">secondary</data>
+  <data key="d10">45249856</data>
+</edge>
+<edge id="0" source="2247896665" target="1595758046">
+  <data key="d8">Andrahalli Main Road</data>
+  <data key="d13">39.305</data>
+  <data key="d14">False</data>
+  <data key="d9">secondary</data>
+  <data key="d10">45249856</data>
+</edge>
+<edge id="0" source="2431140188" target="1794666977">
+  <data key="d7">2</data>
+  <data key="d9">secondary</data>
+  <data key="d12">40</data>
+  <data key="d11">yes</data>
+  <data key="d10">168173381</data>
+  <data key="d13">54.373</data>
+  <data key="d14">True</data>
+</edge>
+<edge id="0" source="2431140189" target="308072435">
+  <data key="d7">2</data>
+  <data key="d9">secondary</data>
+  <data key="d12">40</data>
+  <data key="d11">yes</data>
+  <data key="d10">28056441</data>
+  <data key="d13">19.653</data>
+  <data key="d14">True</data>
+</edge>
+<edge id="0" source="3520978676" target="1794666955">
+  <data key="d7">2</data>
+  <data key="d9">secondary</data>
+  <data key="d12">40</data>
+  <data key="d11">yes</data>
+  <data key="d10">168173381</data>
+  <data key="d13">2.969</data>
+  <data key="d14">True</data>
+</edge>
+<edge id="0" source="3419979745" target="419638282">
+  <data key="d14">False</data>
+  <data key="d13">16.563</data>
+  <data key="d9">secondary</data>
+  <data key="d10">431181123</data>
+</edge>
+<edge id="0" source="3419979745" target="1794666954">
+  <data key="d7">2</data>
+  <data key="d9">secondary</data>
+  <data key="d12">40</data>
+  <data key="d11">yes</data>
+  <data key="d10">168173381</data>
+  <data key="d13">17.754</data>
+  <data key="d14">True</data>
+</edge>
+<edge id="0" source="3833695332" target="245617178">
+  <data key="d7">2</data>
+  <data key="d8">Tumkur Road</data>
+  <data key="d10">383028789</data>
+  <data key="d14">True</data>
+  <data key="d6">NH48</data>
+  <data key="d9">trunk</data>
+  <data key="d12">60</data>
+  <data key="d13">24.705</data>
+</edge>
+<edge id="0" source="599212397" target="419638282">
+  <data key="d8">High Tension Road</data>
+  <data key="d13">267.334</data>
+  <data key="d14">False</data>
+  <data key="d9">secondary</data>
+  <data key="d10">45250014</data>
+</edge>
+<edge id="0" source="599212397" target="419638287">
+  <data key="d8">High Tension Road</data>
+  <data key="d13">326.301</data>
+  <data key="d14">False</data>
+  <data key="d9">secondary</data>
+  <data key="d10">45250014</data>
+</edge>
+<edge id="0" source="2247896644" target="2247896640">
+  <data key="d8">Andrahalli Main Road</data>
+  <data key="d13">87.976</data>
+  <data key="d14">False</data>
+  <data key="d9">secondary</data>
+  <data key="d10">45249856</data>
+</edge>
+<edge id="0" source="2247896644" target="1595757909">
+  <data key="d8">Andrahalli Main Road</data>
+  <data key="d13">16.074</data>
+  <data key="d14">False</data>
+  <data key="d9">secondary</data>
+  <data key="d10">45249856</data>
+</edge>
+<edge id="0" source="308072424" target="308072427">
+  <data key="d7">2</data>
+  <data key="d9">secondary</data>
+  <data key="d12">40</data>
+  <data key="d11">yes</data>
+  <data key="d10">28056441</data>
+  <data key="d13">57.158</data>
+  <data key="d14">True</data>
+</edge>
+<edge id="0" source="1054665150" target="571438263">
+  <data key="d7">2</data>
+  <data key="d8">Tumkur Road</data>
+  <data key="d10">383028788</data>
+  <data key="d14">True</data>
+  <data key="d6">NH48;75</data>
+  <data key="d9">trunk</data>
+  <data key="d12">60</data>
+  <data key="d13">34.379</data>
+</edge>
+<edge id="0" source="3520978675" target="3520978676">
+  <data key="d7">2</data>
+  <data key="d9">secondary</data>
+  <data key="d12">40</data>
+  <data key="d11">yes</data>
+  <data key="d10">168173381</data>
+  <data key="d13">12.13</data>
+  <data key="d14">True</data>
+</edge>
+<edge id="0" source="483412094" target="419638287">
+  <data key="d8">High Tension Road</data>
+  <data key="d13">412.662</data>
+  <data key="d14">False</data>
+  <data key="d9">secondary</data>
+  <data key="d10">45250014</data>
+</edge>
+<edge id="0" source="3856885376" target="308072773">
+  <data key="d7">2</data>
+  <data key="d9">secondary</data>
+  <data key="d12">40</data>
+  <data key="d11">yes</data>
+  <data key="d10">28056441</data>
+  <data key="d13">3.816</data>
+  <data key="d14">True</data>
+</edge>
+<edge id="0" source="3856885380" target="701736119">
+  <data key="d7">2</data>
+  <data key="d9">secondary</data>
+  <data key="d12">40</data>
+  <data key="d11">yes</data>
+  <data key="d10">168173381</data>
+  <data key="d13">7.043</data>
+  <data key="d14">True</data>
+</edge>
+<edge id="0" source="1595758102" target="2248546544">
+  <data key="d8">Andrahalli Main Road</data>
+  <data key="d13">6.694</data>
+  <data key="d14">False</data>
+  <data key="d9">secondary</data>
+  <data key="d10">45249856</data>
+</edge>
+<edge id="0" source="1595758102" target="2247896665">
+  <data key="d8">Andrahalli Main Road</data>
+  <data key="d13">66.66</data>
+  <data key="d14">False</data>
+  <data key="d9">secondary</data>
+  <data key="d10">45249856</data>
+</edge>
+<edge id="0" source="599212693" target="2248546480">
+  <data key="d8">Andrahalli Main Road</data>
+  <data key="d13">14.207</data>
+  <data key="d14">False</data>
+  <data key="d9">secondary</data>
+  <data key="d10">45249856</data>
+</edge>
+<edge id="0" source="599212693" target="2431146027">
+  <data key="d8">Andrahalli Main Road</data>
+  <data key="d13">20.174</data>
+  <data key="d14">False</data>
+  <data key="d9">secondary</data>
+  <data key="d10">45249856</data>
+</edge>
+<edge id="0" source="599212695" target="2248546492">
+  <data key="d8">Andrahalli Main Road</data>
+  <data key="d13">23.628</data>
+  <data key="d14">False</data>
+  <data key="d9">secondary</data>
+  <data key="d10">45249856</data>
+</edge>
+<edge id="0" source="599212695" target="2248546494">
+  <data key="d8">Andrahalli Main Road</data>
+  <data key="d13">17.002</data>
+  <data key="d14">False</data>
+  <data key="d9">secondary</data>
+  <data key="d10">45249856</data>
+</edge>
+<edge id="0" source="2248546372" target="599212617">
+  <data key="d8">Andrahalli Main Road</data>
+  <data key="d13">163.716</data>
+  <data key="d14">False</data>
+  <data key="d9">secondary</data>
+  <data key="d10">45249856</data>
+</edge>
+<edge id="0" source="2248546372" target="2431146294">
+  <data key="d8">Andrahalli Main Road</data>
+  <data key="d13">34.81</data>
+  <data key="d14">False</data>
+  <data key="d9">secondary</data>
+  <data key="d10">45249856</data>
+</edge>
+<edge id="0" source="599212698" target="2431146027">
+  <data key="d8">Andrahalli Main Road</data>
+  <data key="d13">28.361</data>
+  <data key="d14">False</data>
+  <data key="d9">secondary</data>
+  <data key="d10">45249856</data>
+</edge>
+<edge id="0" source="599212698" target="2248546492">
+  <data key="d8">Andrahalli Main Road</data>
+  <data key="d13">8.504</data>
+  <data key="d14">False</data>
+  <data key="d9">secondary</data>
+  <data key="d10">45249856</data>
+</edge>
+<edge id="0" source="245617178" target="3419979747">
+  <data key="d7">2</data>
+  <data key="d8">Tumkur Road</data>
+  <data key="d10">383028789</data>
+  <data key="d14">True</data>
+  <data key="d6">NH48</data>
+  <data key="d9">trunk</data>
+  <data key="d12">60</data>
+  <data key="d13">21.607</data>
+</edge>
+<edge id="0" source="308072432" target="2431140189">
+  <data key="d7">2</data>
+  <data key="d9">secondary</data>
+  <data key="d12">40</data>
+  <data key="d11">yes</data>
+  <data key="d10">28056441</data>
+  <data key="d13">98.756</data>
+  <data key="d14">True</data>
+</edge>
+<edge id="0" source="3833983046" target="3833983036">
+  <data key="d7">2</data>
+  <data key="d8">Tumkur Road</data>
+  <data key="d10">383028789</data>
+  <data key="d14">True</data>
+  <data key="d6">NH48</data>
+  <data key="d9">trunk</data>
+  <data key="d12">60</data>
+  <data key="d13">43.432</data>
+</edge>
+<edge id="0" source="599212532" target="2431146694">
+  <data key="d8">Andrahalli Main Road</data>
+  <data key="d13">11.159</data>
+  <data key="d14">False</data>
+  <data key="d9">secondary</data>
+  <data key="d10">45249856</data>
+</edge>
+<edge id="0" source="2248546480" target="2247896650">
+  <data key="d8">Andrahalli Main Road</data>
+  <data key="d13">15.714</data>
+  <data key="d14">False</data>
+  <data key="d9">secondary</data>
+  <data key="d10">45249856</data>
+</edge>
+<edge id="0" source="2248546480" target="599212693">
+  <data key="d8">Andrahalli Main Road</data>
+  <data key="d13">14.207</data>
+  <data key="d14">False</data>
+  <data key="d9">secondary</data>
+  <data key="d10">45249856</data>
+</edge>
+<edge id="0" source="1054665137" target="3862315982">
+  <data key="d7">2</data>
+  <data key="d8">Tumkur Road</data>
+  <data key="d10">383028788</data>
+  <data key="d14">True</data>
+  <data key="d6">NH48;75</data>
+  <data key="d9">trunk</data>
+  <data key="d12">60</data>
+  <data key="d13">39.081</data>
+</edge>
+<edge id="0" source="3833763827" target="3833695332">
+  <data key="d7">2</data>
+  <data key="d8">Tumkur Road</data>
+  <data key="d10">383028789</data>
+  <data key="d14">True</data>
+  <data key="d6">NH48</data>
+  <data key="d9">trunk</data>
+  <data key="d12">60</data>
+  <data key="d13">337.728</data>
+</edge>
+<edge id="0" source="2431141046" target="3833983008">
+  <data key="d7">2</data>
+  <data key="d9">secondary</data>
+  <data key="d12">40</data>
+  <data key="d11">yes</data>
+  <data key="d10">28056441</data>
+  <data key="d13">5.943</data>
+  <data key="d14">True</data>
+</edge>
+<edge id="0" source="701736119" target="426823697">
+  <data key="d7">2</data>
+  <data key="d8">Tumkur Road</data>
+  <data key="d10">383028788</data>
+  <data key="d14">True</data>
+  <data key="d6">NH48;75</data>
+  <data key="d9">trunk</data>
+  <data key="d12">60</data>
+  <data key="d13">34.523</data>
+</edge>
+<edge id="0" source="701736119" target="3419979747">
+  <data key="d7">2</data>
+  <data key="d9">secondary</data>
+  <data key="d12">40</data>
+  <data key="d11">yes</data>
+  <data key="d10">168173381</data>
+  <data key="d13">17.721</data>
+  <data key="d14">True</data>
+</edge>
+<edge id="0" source="571438265" target="1054665137">
+  <data key="d7">2</data>
+  <data key="d8">Tumkur Road</data>
+  <data key="d10">383028788</data>
+  <data key="d14">True</data>
+  <data key="d6">NH48;75</data>
+  <data key="d9">trunk</data>
+  <data key="d12">60</data>
+  <data key="d13">100.159</data>
+</edge>
+<edge id="0" source="2248546492" target="599212698">
+  <data key="d8">Andrahalli Main Road</data>
+  <data key="d13">8.504</data>
+  <data key="d14">False</data>
+  <data key="d9">secondary</data>
+  <data key="d10">45249856</data>
+</edge>
+<edge id="0" source="2248546492" target="599212695">
+  <data key="d8">Andrahalli Main Road</data>
+  <data key="d13">23.628</data>
+  <data key="d14">False</data>
+  <data key="d9">secondary</data>
+  <data key="d10">45249856</data>
+</edge>
+<edge id="0" source="2248546494" target="1595758046">
+  <data key="d8">Andrahalli Main Road</data>
+  <data key="d13">14.093</data>
+  <data key="d14">False</data>
+  <data key="d9">secondary</data>
+  <data key="d10">45249856</data>
+</edge>
+<edge id="0" source="2248546494" target="599212695">
+  <data key="d8">Andrahalli Main Road</data>
+  <data key="d13">17.002</data>
+  <data key="d14">False</data>
+  <data key="d9">secondary</data>
+  <data key="d10">45249856</data>
+</edge>
+<edge id="0" source="2431146694" target="574520859">
+  <data key="d8">Andrahalli Main Road</data>
+  <data key="d13">137.318</data>
+  <data key="d14">False</data>
+  <data key="d9">secondary</data>
+  <data key="d10">45249856</data>
+</edge>
+<edge id="0" source="2431146694" target="599212532">
+  <data key="d8">Andrahalli Main Road</data>
+  <data key="d13">11.159</data>
+  <data key="d14">False</data>
+  <data key="d9">secondary</data>
+  <data key="d10">45249856</data>
+</edge>
+<edge id="0" source="1794666951" target="2431140122">
+  <data key="d7">2</data>
+  <data key="d9">secondary</data>
+  <data key="d12">40</data>
+  <data key="d11">yes</data>
+  <data key="d10">168173381</data>
+  <data key="d13">2.194</data>
+  <data key="d14">True</data>
+</edge>
+<edge id="0" source="1794666954" target="1794666984">
+  <data key="d7">2</data>
+  <data key="d9">secondary</data>
+  <data key="d12">40</data>
+  <data key="d11">yes</data>
+  <data key="d10">464288498</data>
+  <data key="d13">115.76</data>
+  <data key="d14">True</data>
+</edge>
+<edge id="0" source="1794666955" target="3419979745">
+  <data key="d7">2</data>
+  <data key="d9">secondary</data>
+  <data key="d12">40</data>
+  <data key="d11">yes</data>
+  <data key="d10">168173381</data>
+  <data key="d13">149.302</data>
+  <data key="d14">True</data>
+</edge>
+<edge id="0" source="1794666956" target="1794666963">
+  <data key="d7">2</data>
+  <data key="d9">secondary</data>
+  <data key="d12">40</data>
+  <data key="d11">yes</data>
+  <data key="d10">168173381</data>
+  <data key="d13">46.438</data>
+  <data key="d14">True</data>
+</edge>
+<edge id="0" source="1794666958" target="1794666976">
+  <data key="d7">2</data>
+  <data key="d9">secondary</data>
+  <data key="d12">40</data>
+  <data key="d11">yes</data>
+  <data key="d10">168173381</data>
+  <data key="d13">29.693</data>
+  <data key="d14">True</data>
+</edge>
+<edge id="0" source="4843481807" target="4843481817">
+  <data key="d7">2</data>
+  <data key="d8">Tumkur Road</data>
+  <data key="d10">383028789</data>
+  <data key="d14">True</data>
+  <data key="d6">NH48</data>
+  <data key="d9">trunk</data>
+  <data key="d12">60</data>
+  <data key="d13">11.775</data>
+</edge>
+<edge id="0" source="2248439248" target="2248439252">
+  <data key="d7">2</data>
+  <data key="d9">secondary</data>
+  <data key="d12">40</data>
+  <data key="d11">yes</data>
+  <data key="d10">28056441</data>
+  <data key="d13">40.036</data>
+  <data key="d14">True</data>
+</edge>
+<edge id="0" source="1794666963" target="2248439290">
+  <data key="d7">2</data>
+  <data key="d9">secondary</data>
+  <data key="d12">40</data>
+  <data key="d11">yes</data>
+  <data key="d10">168173381</data>
+  <data key="d13">152.159</data>
+  <data key="d14">True</data>
+</edge>
+<edge id="0" source="2248439252" target="308072438">
+  <data key="d7">2</data>
+  <data key="d9">secondary</data>
+  <data key="d12">40</data>
+  <data key="d11">yes</data>
+  <data key="d10">28056441</data>
+  <data key="d13">18.683</data>
+  <data key="d14">True</data>
+</edge>
+<edge id="0" source="3862315982" target="3862315991">
+  <data key="d7">2</data>
+  <data key="d8">Tumkur Road</data>
+  <data key="d10">383028788</data>
+  <data key="d14">True</data>
+  <data key="d6">NH48;75</data>
+  <data key="d9">trunk</data>
+  <data key="d12">60</data>
+  <data key="d13">34.987</data>
+</edge>
+<edge id="0" source="3862315990" target="426823702">
+  <data key="d7">2</data>
+  <data key="d8">Tumkur Road</data>
+  <data key="d10">383028788</data>
+  <data key="d14">True</data>
+  <data key="d6">NH48;75</data>
+  <data key="d9">trunk</data>
+  <data key="d12">60</data>
+  <data key="d13">42.582</data>
+</edge>
+<edge id="0" source="1794666967" target="1794666968">
+  <data key="d7">2</data>
+  <data key="d9">secondary</data>
+  <data key="d12">40</data>
+  <data key="d11">yes</data>
+  <data key="d10">168173381</data>
+  <data key="d13">55.901</data>
+  <data key="d14">True</data>
+</edge>
+<edge id="0" source="1794666968" target="1794666951">
+  <data key="d7">2</data>
+  <data key="d9">secondary</data>
+  <data key="d12">40</data>
+  <data key="d11">yes</data>
+  <data key="d10">168173381</data>
+  <data key="d13">14.383</data>
+  <data key="d14">True</data>
+</edge>
+<edge id="0" source="4843481817" target="3833763827">
+  <data key="d7">2</data>
+  <data key="d8">Tumkur Road</data>
+  <data key="d10">383028789</data>
+  <data key="d14">True</data>
+  <data key="d6">NH48</data>
+  <data key="d9">trunk</data>
+  <data key="d12">60</data>
+  <data key="d13">89.828</data>
+</edge>
+<edge id="0" source="4843481818" target="4843481808">
+  <data key="d7">2</data>
+  <data key="d8">Tumkur Road</data>
+  <data key="d10">383028788</data>
+  <data key="d14">True</data>
+  <data key="d6">NH48;75</data>
+  <data key="d9">trunk</data>
+  <data key="d12">60</data>
+  <data key="d13">12.431</data>
+</edge>
+<edge id="0" source="1794666977" target="1794666960">
+  <data key="d7">2</data>
+  <data key="d9">secondary</data>
+  <data key="d12">40</data>
+  <data key="d11">yes</data>
+  <data key="d10">168173381</data>
+  <data key="d13">94.901</data>
+  <data key="d14">True</data>
+</edge>
+<edge id="0" source="308072413" target="419638282">
+  <data key="d7">2</data>
+  <data key="d9">secondary</data>
+  <data key="d12">40</data>
+  <data key="d11">yes</data>
+  <data key="d10">28056441</data>
+  <data key="d13">115.497</data>
+  <data key="d14">True</data>
+</edge>
+<edge id="0" source="1794666974" target="1794666967">
+  <data key="d7">2</data>
+  <data key="d9">secondary</data>
+  <data key="d12">40</data>
+  <data key="d11">yes</data>
+  <data key="d10">168173381</data>
+  <data key="d13">46.778</data>
+  <data key="d14">True</data>
+</edge>
+<edge id="0" source="1794666976" target="2431140188">
+  <data key="d7">2</data>
+  <data key="d9">secondary</data>
+  <data key="d12">40</data>
+  <data key="d11">yes</data>
+  <data key="d10">168173381</data>
+  <data key="d13">72.072</data>
+  <data key="d14">True</data>
+</edge>
+<edge id="0" source="3419979746" target="1794666956">
+  <data key="d7">2</data>
+  <data key="d9">secondary</data>
+  <data key="d12">40</data>
+  <data key="d11">yes</data>
+  <data key="d10">168173381</data>
+  <data key="d13">98.856</data>
+  <data key="d14">True</data>
+</edge>
+<edge id="0" source="1794666979" target="1794666958">
+  <data key="d7">2</data>
+  <data key="d9">secondary</data>
+  <data key="d12">40</data>
+  <data key="d11">yes</data>
+  <data key="d10">168173381</data>
+  <data key="d13">11.598</data>
+  <data key="d14">True</data>
+</edge>
+<edge id="0" source="308072421" target="3520978674">
+  <data key="d7">2</data>
+  <data key="d9">secondary</data>
+  <data key="d12">40</data>
+  <data key="d11">yes</data>
+  <data key="d10">28056441</data>
+  <data key="d13">10.368</data>
+  <data key="d14">True</data>
+</edge>
+<edge id="0" source="1794666984" target="1794666966">
+  <data key="d7">2</data>
+  <data key="d9">secondary</data>
+  <data key="d12">40</data>
+  <data key="d11">yes</data>
+  <data key="d10">464288498</data>
+  <data key="d13">49.877</data>
+  <data key="d14">True</data>
+</edge>
+<edge id="0" source="308072427" target="308072430">
+  <data key="d7">2</data>
+  <data key="d9">secondary</data>
+  <data key="d12">40</data>
+  <data key="d11">yes</data>
+  <data key="d10">28056441</data>
+  <data key="d13">48.915</data>
+  <data key="d14">True</data>
+</edge>
+<edge id="0" source="308072430" target="308072432">
+  <data key="d7">2</data>
+  <data key="d9">secondary</data>
+  <data key="d12">40</data>
+  <data key="d11">yes</data>
+  <data key="d10">28056441</data>
+  <data key="d13">63.232</data>
+  <data key="d14">True</data>
+</edge>
+<edge id="0" source="308072443" target="2248439358">
+  <data key="d7">2</data>
+  <data key="d9">secondary</data>
+  <data key="d12">40</data>
+  <data key="d11">yes</data>
+  <data key="d10">28056441</data>
+  <data key="d13">17.643</data>
+  <data key="d14">True</data>
+</edge>
+<edge id="0" source="2248546544" target="1595758102">
+  <data key="d8">Andrahalli Main Road</data>
+  <data key="d13">6.694</data>
+  <data key="d14">False</data>
+  <data key="d9">secondary</data>
+  <data key="d10">45249856</data>
+</edge>
+<edge id="0" source="3520978674" target="419638270">
+  <data key="d7">2</data>
+  <data key="d9">secondary</data>
+  <data key="d12">40</data>
+  <data key="d11">yes</data>
+  <data key="d10">28056441</data>
+  <data key="d13">285.161</data>
+  <data key="d14">True</data>
+</edge>
+<edge id="0" source="419638259" target="308072441">
+  <data key="d7">2</data>
+  <data key="d9">secondary</data>
+  <data key="d12">40</data>
+  <data key="d11">yes</data>
+  <data key="d10">28056441</data>
+  <data key="d13">12.25</data>
+  <data key="d14">True</data>
+</edge>
+<edge id="0" source="1794666960" target="1794666974">
+  <data key="d7">2</data>
+  <data key="d9">secondary</data>
+  <data key="d12">40</data>
+  <data key="d11">yes</data>
+  <data key="d10">168173381</data>
+  <data key="d13">73.711</data>
+  <data key="d14">True</data>
+</edge>
+<edge id="0" source="2248439294" target="2248439349">
+  <data key="d7">2</data>
+  <data key="d9">secondary</data>
+  <data key="d12">40</data>
+  <data key="d11">yes</data>
+  <data key="d10">28056441</data>
+  <data key="d13">146.942</data>
+  <data key="d14">True</data>
+</edge>
+<edge id="0" source="308072438" target="419638259">
+  <data key="d7">2</data>
+  <data key="d9">secondary</data>
+  <data key="d12">40</data>
+  <data key="d11">yes</data>
+  <data key="d10">28056441</data>
+  <data key="d13">25.025</data>
+  <data key="d14">True</data>
+</edge>
+<edge id="0" source="3833983048" target="3833983038">
+  <data key="d7">2</data>
+  <data key="d8">Tumkur Road</data>
+  <data key="d10">383028789</data>
+  <data key="d14">True</data>
+  <data key="d6">NH48</data>
+  <data key="d9">trunk</data>
+  <data key="d12">60</data>
+  <data key="d13">30.922</data>
+</edge>
+<edge id="0" source="308072441" target="2248439294">
+  <data key="d7">2</data>
+  <data key="d9">secondary</data>
+  <data key="d12">40</data>
+  <data key="d11">yes</data>
+  <data key="d10">28056441</data>
+  <data key="d13">79.472</data>
+  <data key="d14">True</data>
+</edge>
+<edge id="0" source="2248439290" target="1794666979">
+  <data key="d7">2</data>
+  <data key="d9">secondary</data>
+  <data key="d12">40</data>
+  <data key="d11">yes</data>
+  <data key="d10">168173381</data>
+  <data key="d13">80.883</data>
+  <data key="d14">True</data>
+</edge>
+<edge id="0" source="2248439358" target="308072445">
+  <data key="d7">2</data>
+  <data key="d9">secondary</data>
+  <data key="d12">40</data>
+  <data key="d11">yes</data>
+  <data key="d10">28056441</data>
+  <data key="d13">63.675</data>
+  <data key="d14">True</data>
+</edge>
+<edge id="0" source="308072445" target="2431141046">
+  <data key="d7">2</data>
+  <data key="d9">secondary</data>
+  <data key="d12">40</data>
+  <data key="d11">yes</data>
+  <data key="d10">28056441</data>
+  <data key="d13">49.755</data>
+  <data key="d14">True</data>
+</edge>
+<edge id="0" source="419638270" target="308072424">
+  <data key="d7">2</data>
+  <data key="d9">secondary</data>
+  <data key="d12">40</data>
+  <data key="d11">yes</data>
+  <data key="d10">28056441</data>
+  <data key="d13">14.657</data>
+  <data key="d14">True</data>
+</edge>
+<edge id="0" source="308072435" target="2248439248">
+  <data key="d7">2</data>
+  <data key="d9">secondary</data>
+  <data key="d12">40</data>
+  <data key="d11">yes</data>
+  <data key="d10">28056441</data>
+  <data key="d13">58.353</data>
+  <data key="d14">True</data>
+</edge>
+</graph></graphml>

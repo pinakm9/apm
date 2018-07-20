@@ -5,6 +5,7 @@ from descartes import PolygonPatch
 from utility import *
 import utm
 import osmnx as ox #
+import road
 
 def find_drop_point(f, drop_ratio, direction, tol = 1e-6, start = 1, max_itr = 50, verbose = False):
 	a, b = direction
@@ -64,7 +65,21 @@ def find_influence_polygon(f, drop_ratio, tol = 1e-6, start = 1, max_itr = 50, o
 		plt.show()
 	return poly
 
+def find_influence_circle(f, drop_ratio, start = 1000, step = 1000, max_itr = 50, verbose = False):
+	fs = road.CircularStreet((0,0), start).effect(f, (0,0,0))
+	dr, t = 1, start
+	if verbose == True:
+		print('t\tDrop ratio\t\teffect\n{}'.format('-'*53))
+	while dr > drop_ratio and t/step < max_itr:
+		t += step
+		y = road.CircularStreet((0,0), t).effect(f, (0,0,0))
+		dr = y/fs
+		if verbose == True:
+			print('{}\t{}\t{}'.format(t, dr, y))	
+	return t, dr
 
+
+"""
 def influence_polygon_from_lat_lon(point, f, drop_ratio, tol = 1e-6, start = 1, max_itr = 50, angle = 0,\
  plot = False, save_plot = False, filename = None):
 	ox, oy, zone, zone_letter = utm.from_latlon(*point)
@@ -74,12 +89,13 @@ def influence_polygon_from_lat_lon(point, f, drop_ratio, tol = 1e-6, start = 1, 
 	x, y = poly.exterior.coords.xy
 	return print(list(map(lambda z: utm.to_latlon(*z, zone, zone_letter), list(zip(x,y)) )))
 
-"""poly = influence_polygon_from_lat_lon((50,77), lambda x,y: C(x,y,0), 1e-6, angle = 60,  plot = True)
+poly = influence_polygon_from_lat_lon((50,77), lambda x,y: C(x,y,0), 1e-6, angle = 60,  plot = True)
 #G = ox.graph_from_polygon(geometry.Polygon([[12, 77], [13,78], [14,77], [13, 77], [12,77]]), network_type = 'all')
 G = ox.graph_from_polygon(poly, network_type = 'drive')
 ox.plot_graph(G)"""
 
 #print(influence_polygon_from_lat_lon([7,8], lambda x,y: C(x,y,0), 1e-6, start = 100, angle = 60,  plot = True))
 #print(find_drop_point(lambda x,y: C(x,y,0, u = 9e-3, K=1e-6), 1e-6, direction_from_degree(78), start = 1, verbose = True))
-find_influence_polygon(lambda x,y: C(x,y,0, u = 5, K=1), 1e-10, start = 300, max_itr = 500, angle = 120,\
-wind = 5, eddy = 1, plot = True, verbose = True, save_plot =True, filename = 'images/influence_polygon.png')
+#find_influence_polygon(lambda x,y: C(x,y,0, u = 5, K=1), 1e-10, start = 300, max_itr = 500, angle = 120,\
+#wind = 5, eddy = 1, plot = True, verbose = True, save_plot =True, filename = 'images/influence_polygon.png')
+find_influence_circle(lambda x,y,z: C(x,y,0, u = 5, K=1), 1e-1, verbose = True)
