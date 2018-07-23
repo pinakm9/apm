@@ -3,6 +3,7 @@ import json
 import osmnx as ox
 import pwaqi as pw
 import pandas as pd
+import datetime as dt
 from utility import *
 
 @timer
@@ -55,7 +56,7 @@ def process_city_pollution_data(data):
 
 @timer
 def get_city_pollution_data(city, token = '09f4aebf96d26720c88d48f23293f18a6e912eb4', max_attempts = 10,\
- save = True, folder = '', filename = ''):
+ save = True, folder = 'data/', filename = ''):
 	data = process_city_pollution_data(collect_city_pollution_data(city, token, max_attempts))
 	if save is True:
 		if filename is '':
@@ -64,8 +65,25 @@ def get_city_pollution_data(city, token = '09f4aebf96d26720c88d48f23293f18a6e912
 	return data
 
 @timer
+def get_pollution_wind_data(city = 'Bangalore', lat = 13.0339, lon = 77.51321111,  \
+	token = '09f4aebf96d26720c88d48f23293f18a6e912eb4', max_attempts = 10,
+ save = True, folder = 'data/', tolerance = 10):
+	data = process_city_pollution_data(collect_city_pollution_data(city, token, max_attempts))
+	recent = max([dt.datetime.strptime(t, '%Y-%m-%d %H:%M:%S')  for t in data['time']])
+	current = dt.datetime.now()
+	diff = abs((current - recent).total_seconds())
+	if  diff < tolerance*60:
+		pd.DataFrame(collect_weather_data(lat, lon)['wind'], index = [0])\
+		.to_csv(folder + city + '-' + str(current) + '-weather.csv' , index = False)
+		pd.DataFrame(data).to_csv(folder + city + '-' + str(recent) + '-pollution.csv', index = False)
+		print('Data collected within tolerance, difference = {} min'.format(diff/60))
+	else:
+		print('Data could not be collected within tolerance, difference = {} min'.format(diff/60))
+
+
+@timer
 def detect_drive_network_from_place(place, save = True, filename = 'icts2000'):
-	G = ox.graph_from_place(query = place, network_type = 'drive', simplify = False)
+	G = ox.graph_from_place(place, network_type = 'drive', simplify = False)
 	hwy_types = ['primary', 'motorway', 'trunk']
 	gdf = ox.graph_to_gdfs(G, nodes=False)
 	mask = ~gdf['highway'].map(lambda x: isinstance(x, str) and x in hwy_types)
@@ -93,5 +111,8 @@ def detect_drive_network_from_point(lat = 13.14633, lon = 77.514386, distance = 
 	return G
 
 #print(get_city_pollution_data('Bangalore', folder = 'data/'))
-#detect_drive_network_from_point(13.0339, 77.51321111, 4000, filename = 'peenya')
-detect_drive_network_from_place('Bangalore, India', filename = 'Bangalore')
+#detect_drive_network_from_point(12.91281111, 77.60921944, 25000, filename = 'btm')
+#detect_drive_network_from_place('Bangalore, India', filename = 'Bangalore')
+get_pollution_wind_data(tolerance = 20)
+#data = collect_weather_data(lat = 13.0339, lon = 77.51321111)
+#print(type(pd.DataFrame(data['wind'])))

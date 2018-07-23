@@ -5,6 +5,7 @@ import matplotlib.pyplot as plt
 import utm
 import scipy.integrate as integrate
 
+
 class LinearStreet:
 
 	def __init__(self, start, end):
@@ -23,9 +24,9 @@ class LinearStreet:
 
 class StreetNetwork:
 
-	def __init__(self, file):
+	def __init__(self, file, origin = [0, 0], rotation = 0):
 		self.network = ox.load_graphml(file)
-		self.detect_network_segments()
+		self.detect_network_segments(origin, rotation)
 
 	def detect_network_segments(self, origin = [0, 0], rotation = 0):
 		self.segments = []
@@ -70,5 +71,5 @@ class CircularStreet:
 			s += line.effect(f, point)
 		return s
 
-S = StreetNetwork('Bangalore.graphml')
-print(S.effect(C, (13.0339, 77.51321111)))
+S = StreetNetwork('btm-8000.graphml')
+print(S.effect(ermak_g, (12.91281111, 77.60921944)))

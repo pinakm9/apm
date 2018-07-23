@@ -98,4 +98,4 @@ ox.plot_graph(G)"""
 #print(find_drop_point(lambda x,y: C(x,y,0, u = 9e-3, K=1e-6), 1e-6, direction_from_degree(78), start = 1, verbose = True))
 #find_influence_polygon(lambda x,y: C(x,y,0, u = 5, K=1), 1e-10, start = 300, max_itr = 500, angle = 120,\
 #wind = 5, eddy = 1, plot = True, verbose = True, save_plot =True, filename = 'images/influence_polygon.png')
-find_influence_circle(lambda x,y,z: C(x,y,0, u = 5, K=1), 1e-1, verbose = True)
+find_influence_circle(ermak, 1e-1, verbose = True)
