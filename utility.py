@@ -44,15 +44,12 @@ def C(x, y, z, Q = 1, u = 5, K = 1, H = 0):
 		return Q*cy*cz/(4*u*r*np.sqrt(np.pi))
 
 
-def C_g(x, y, z, Q = 1, u = 5, K = 1, H = 0):
+def C_g(x, y, z, Q = 1, u = 5.1, K = 0.5, H = 0):
 	if x <= 0:
 		return 0
-	elif abs(K) < 1e-5:
-		return 12
 	else:
 		r = K*x/u
-		print(Q, K)
-		cy = mp.exp(-y**2/(4*r))
+		cy = np.exp(-y**2/(4*r))
 		return Q*cy/(2*u*r*np.sqrt(np.pi))
 
 def ermak(x, y, z, Q = 1, u = 5, K = 1, H = 0, w_dep = 0.13e-2, w_set = 0.02e-2):
@@ -68,7 +65,7 @@ def ermak(x, y, z, Q = 1, u = 5, K = 1, H = 0, w_dep = 0.13e-2, w_set = 0.02e-2)
 		cy = np.exp(-y**2/(4*r))
 		return Q*cxz*cy*cz/(4*u*r*np.sqrt(np.pi))
 
-def ermak_g(x, y, z, Q = 1, u = 5, K = 1, w_dep = 0.13e-2, w_set = 0.02e-2):
+def ermak_g(x, y, z, Q = 1, u = 5.1, K = 1, w_dep = 0.13e-2, w_set = 0.02e-2):
 	if x <= 0:
 		return 0
 	else:

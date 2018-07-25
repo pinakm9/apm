@@ -4,6 +4,8 @@ import osmnx as ox
 import pwaqi as pw
 import pandas as pd
 import datetime as dt
+import matplotlib.pyplot as plt
+import utm
 from utility import *
 
 @timer
@@ -107,12 +109,14 @@ def detect_drive_network_from_point(lat = 13.14633, lon = 77.514386, distance = 
 	G_projected = ox.project_graph(G)
 	filename += '-' + str(distance)
 	fig, ax = ox.plot_graph(G_projected, show = False, save = save, filename = filename, file_format='svg')
+	plt.scatter(*utm.from_latlon(lat,lon)[:2])
+	plt.show()
 	ox.save_graphml(G, filename = filename + '.graphml')
 	return G
 
 #print(get_city_pollution_data('Bangalore', folder = 'data/'))
-#detect_drive_network_from_point(12.91281111, 77.60921944, 25000, filename = 'btm')
+detect_drive_network_from_point(13.0339, 77.51321111, 100000, filename = 'peenya')
 #detect_drive_network_from_place('Bangalore, India', filename = 'Bangalore')
-get_pollution_wind_data(tolerance = 20)
+#get_pollution_wind_data(tolerance = 20)
 #data = collect_weather_data(lat = 13.0339, lon = 77.51321111)
 #print(type(pd.DataFrame(data['wind'])))

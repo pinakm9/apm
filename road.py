@@ -22,6 +22,7 @@ class LinearStreet:
 	def length(self):
 		return np.sqrt((self.x0-self.x1)**2+(self.y0-self.y1)**2)
 
+
 class StreetNetwork:
 
 	def __init__(self, file, origin = [0, 0], rotation = 0):
@@ -40,8 +41,11 @@ class StreetNetwork:
 		return self.segments
 
 	def effect(self, f, point):
-		pt = list(utm.from_latlon(*point)[:2])
-		pt.append(point[1])
+		pt = list(utm.from_latlon(*point[:2])[:2])
+		if len(point) < 3:
+			pt.append(0)
+		else:
+			pt.append(point[2])
 		s = 0
 		for line in self.segments:
 			s += line.effect(f, pt)
@@ -49,11 +53,11 @@ class StreetNetwork:
 
 class CircularStreet:
 	
-	def __init__(self, center, radius, resolution = 1e-3):
+	def __init__(self, center, radius, resolution = 1e-3, show = False):
 		self.center = center
 		self.radius = radius
 		self.resolution = resolution
-		t = np.arange(0, np.pi, resolution)
+		t = np.arange(0, 2*np.pi, resolution)
 		x, y = radius*np.cos(t) + center[0], radius*np.sin(t) + center[1]
 		self.points = list(zip(x,y))
 		self.segments = []
@@ -63,6 +67,10 @@ class CircularStreet:
 				self.segments.append(LinearStreet(self.points[i], self.points[i+1]))
 			else:
 				self.segments.append(LinearStreet(self.points[i], self.points[0]))
+		if show is True:
+			plt.scatter(x, y)
+			plt.show()
+
 
 
 	def effect(self, f, point):
@@ -71,5 +79,5 @@ class CircularStreet:
 			s += line.effect(f, point)
 		return s
 
-S = StreetNetwork('btm-8000.graphml')
-print(S.effect(ermak_g, (12.91281111, 77.60921944)))
+S = StreetNetwork('peenya-100000.graphml', rotation = 0, origin = utm.from_latlon(13.0339, 77.51321111)[:2])
+print(S.effect(C_g, (0,0)))
