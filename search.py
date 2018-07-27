@@ -115,7 +115,7 @@ def detect_drive_network_from_point(lat = 13.14633, lon = 77.514386, distance = 
 	return G
 
 #print(get_city_pollution_data('Bangalore', folder = 'data/'))
-detect_drive_network_from_point(13.0339, 77.51321111, 100000, filename = 'peenya')
+detect_drive_network_from_point(13.0339, 77.51321111, 10000, filename = 'peenya')
 #detect_drive_network_from_place('Bangalore, India', filename = 'Bangalore')
 #get_pollution_wind_data(tolerance = 20)
 #data = collect_weather_data(lat = 13.0339, lon = 77.51321111)

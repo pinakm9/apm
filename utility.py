@@ -44,7 +44,7 @@ def C(x, y, z, Q = 1, u = 5, K = 1, H = 0):
 		return Q*cy*cz/(4*u*r*np.sqrt(np.pi))
 
 
-def C_g(x, y, z, Q = 1, u = 5.1, K = 0.5, H = 0):
+def C_g(x, y, z, Q = 1, u = 5.1, K = 1, H = 0):
 	if x <= 0:
 		return 0
 	else:

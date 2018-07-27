@@ -57,7 +57,7 @@ class CircularStreet:
 		self.center = center
 		self.radius = radius
 		self.resolution = resolution
-		t = np.arange(0, 2*np.pi, resolution)
+		t = np.arange(np.pi/2, 3*np.pi/2, resolution)
 		x, y = radius*np.cos(t) + center[0], radius*np.sin(t) + center[1]
 		self.points = list(zip(x,y))
 		self.segments = []
@@ -79,5 +79,5 @@ class CircularStreet:
 			s += line.effect(f, point)
 		return s
 
-S = StreetNetwork('peenya-100000.graphml', rotation = 0, origin = utm.from_latlon(13.0339, 77.51321111)[:2])
-print(S.effect(C_g, (0,0)))
+#S = StreetNetwork('peenya-120000.graphml', rotation = 0, origin = utm.from_latlon(13.0339, 77.51321111)[:2])
+#print(S.effect(C_g, (0,0)))
