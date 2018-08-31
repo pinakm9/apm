@@ -78,6 +78,18 @@ def ermak_g(x, y, z, Q = 1, u = 5.1, K = 1, w_dep = 0.13e-2, w_set = 0.02e-2):
 		return Q*cxz*cy*cz/(4*u*r*np.sqrt(np.pi))
 
 
+def ermak_g_no2(x, y, z, Q = 1, u = 5.1, K = 1, w_dep = 0.12e-2, w_set = 0.):
+	if x <= 0:
+		return 0
+	else:
+		r, w_o = K*x/u, w_dep
+		a = 2*w_o*np.sqrt(np.pi)/K
+		rr = np.sqrt(r)
+		cz = 2 - a*rr*np.exp(r*(w_o/K)**2)*sp.erfc(w_o*rr/K)
+		cxz = np.exp(-r*(w_set/(2*K))**2)
+		cy = np.exp(-y**2/(4*r))
+		return Q*cxz*cy*cz/(4*u*r*np.sqrt(np.pi))
+
 @timer
 def draw_contour(f, meshgrid, imgId):
 	x, y  = meshgrid
