@@ -41,6 +41,7 @@ class StreetNetwork:
 		return self.segments
 
 	def effect(self, f, point):
+		print("blah", point)#, utm.from_latlon(*point))
 		pt = list(utm.from_latlon(*point[:2])[:2])
 		if len(point) < 3:
 			pt.append(0)
@@ -79,5 +80,5 @@ class CircularStreet:
 			s += line.effect(f, point)
 		return s
 
-#S = StreetNetwork('peenya-120000.graphml', rotation = 0, origin = utm.from_latlon(13.0339, 77.51321111)[:2])
-#print(S.effect(C_g, (0,0)))
+#S = StreetNetwork('peenya-6000.graphml', rotation = 0, origin = utm.from_latlon(*[13.0339, 77.51321111][:2])[:2])
+#print(S.effect(C_g, (12,77)))

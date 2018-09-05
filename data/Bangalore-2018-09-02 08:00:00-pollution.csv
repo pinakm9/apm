@@ -1,0 +1,6 @@
+aqi,city,co,dominentpol,h,idx,no2,o3,p,pm10,pm25,so2,t,time,w
+64,"{'name': 'City Railway Station, Bangalore', 'url': 'http://aqicn.org/city/india/bangalore/city-railway-station/', 'geo': ['12.9773472', '77.570697222222']}",4,,78,8686,7,nan,1014,64,nan,5,26,2018-04-20 01:00:00,3
+72,"{'name': 'SaneguravaHalli, Bangalore', 'url': 'http://aqicn.org/city/india/bangalore/saneguravahalli/', 'geo': ['12.9916694', '77.545830555556']}",12,,48,8687,24,nan,1014,72,nan,2,28,2018-04-19 23:00:00,3
+54,"{'name': 'BTM, Bangalore', 'url': 'http://aqicn.org/city/india/bangalore/btm/', 'geo': ['12.91281111', '77.60921944']}",5,,91,8190,3,5,1015,nan,54,5,22,2018-09-02 08:00:00,1
+87,"{'name': 'Peenya, Bangalore', 'url': 'http://aqicn.org/city/india/bangalore/peenya/', 'geo': ['13.0339', '77.51321111']}",6,,74,3758,7,nan,1015,nan,87,3,24,2018-09-02 08:00:00,4
+83,"{'name': 'BWSSB, Bangalore', 'url': 'http://aqicn.org/city/india/bangalore/bwssb/', 'geo': ['12.93890556', '77.69727222']}",7,,67,8191,6,nan,1015,nan,83,3,22,2018-09-02 08:00:00,1

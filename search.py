@@ -86,7 +86,7 @@ def get_pollution_wind_data(city = 'Bangalore', lat = 13.0339, lon = 77.51321111
 @timer
 def detect_drive_network_from_place(place, save = True, filename = 'icts2000'):
 	G = ox.graph_from_place(place, network_type = 'drive', simplify = False)
-	hwy_types = ['primary', 'motorway', 'trunk']
+	hwy_types = ['primary', 'motorway', 'trunk', 'secondary', 'tertiary']
 	gdf = ox.graph_to_gdfs(G, nodes=False)
 	mask = ~gdf['highway'].map(lambda x: isinstance(x, str) and x in hwy_types)
 	edges = zip(gdf[mask]['u'], gdf[mask]['v'], gdf[mask]['key'])
@@ -115,8 +115,8 @@ def detect_drive_network_from_point(lat = 13.14633, lon = 77.514386, distance = 
 	return G
 
 #print(get_city_pollution_data('Bangalore', folder = 'data/'))
-detect_drive_network_from_point(13.0339, 77.51321111, 10000, filename = 'peenya')
-#detect_drive_network_from_place('Bangalore, India', filename = 'Bangalore')
-#get_pollution_wind_data(tolerance = 20)
+#detect_drive_network_from_point(13.0339, 77.51321111, 10000, filename = 'peenya')
+#detect_drive_network_from_place('Bangalore, India', filename = 'Bangalore_t')
+get_pollution_wind_data(tolerance = 60)
 #data = collect_weather_data(lat = 13.0339, lon = 77.51321111)
 #print(type(pd.DataFrame(data['wind'])))

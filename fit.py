@@ -1,5 +1,5 @@
 from utility import *
-from scipy.optimize import minimize
+from scipy.optimize import minimize, leastsq, curve_fit
 import pandas as pd
 import road
 import json
@@ -42,10 +42,39 @@ def set_ermak_and_street_no2(poll_file, station_id, wind_file, street_file='', f
 	return error 
 
 @timer
-def fit_no2(poll_file, station_id, wind_file, street_file='', folder = 'data/'):
+def fit_no2_one(poll_file, station_id, wind_file, street_file='', folder = 'data/'):
 	f = set_ermak_and_street_no2(poll_file, station_id, wind_file, folder)
 	bnds = ((1,1e7), (0.1,2))
-	return minimize(f, (1, 1) , bounds = bnds, tol = 1e-12, method = 'TNC')
+	return minimize(f, (1, 0.5) , bounds = bnds, tol = 1e-12, method = 'TNC')
 
-print(fit_no2('Bangalore-2018-07-23 08:00:00-pollution.csv', 3758,\
-	'Bangalore-2018-07-23 08:16:31.365250-weather.csv'))
+@timer
+def fit_curve_no2(poll_file, station_ids, wind_file, road_file, folder = 'data/'):
+	locs, no2s = [], []
+	for station_id in station_ids:
+		loc, no2, deg, speed = read_data_no2(poll_file, station_id, wind_file, folder)
+		locs.append(tuple(loc))
+		no2s.append(no2)
+	street = road.StreetNetwork(road_file, rotation = deg)
+	locs = np.array(locs)
+	print('foo',locs,locs[0])
+	c = lambda i, Q, K: street.effect(lambda x, y, z: ermak_g_no2(x, y, z, Q, speed, K), locs[i])
+	print(locs.shape)
+
+	popt, pcov = curve_fit(c, [0,1], no2s, bounds = ((1,0.1), (1e7,2))) 
+	print(popt)
+
+def collect_ls_data(files, station_id = 3758):
+	data = []
+	for pair in files:
+		poll, wind  = pair
+		data.append(read_data_no2(poll, station_id, wind)[:3])
+	return np.array(data)
+"""
+ls_files = [('Bangalore-2018-07-23 08:00:00-pollution.csv','Bangalore-2018-07-23 08:16:31.365250-weather.csv'),\
+			('Bangalore-2018-09-02 08:00:00-pollution.csv','Bangalore-2018-09-02 08:49:17.649399-weather.csv'),\
+			('Bangalore-2018-09-02 16:00:00-pollution.csv','Bangalore-2018-09-02 16:58:09.138156-weather.csv'),\
+			('Bangalore-2018-09-03 07:00:00-pollution.csv','Bangalore-2018-09-03 07:34:55.941468-weather.csv')]
+"""
+
+print(fit_curve_no2('Bangalore-2018-07-23 08:00:00-pollution.csv', [3758,8190],\
+	'Bangalore-2018-07-23 08:16:31.365250-weather.csv', 'Bangalore_t.graphml'))
